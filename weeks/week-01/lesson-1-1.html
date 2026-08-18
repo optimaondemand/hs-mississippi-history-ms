@@ -1,0 +1,274 @@
+<!--
+    Optima Academy Online — INTERACTIVE Student Lesson Page.
+    Mississippi History · Week 1 · Lesson 1.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+    Delete the .preview-banner before deploying.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 1.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    /* ===== WIDGET CSS ===== */
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">European Exploration and the Discovery of America</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Europe Looks West: The Age of Exploration Begins</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">European Exploration and the Discovery of America</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+    <!-- Lavender title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Europe Looks West: The Age of Exploration Begins</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In 1492, a fleet of three small ships sailed west from Spain, gambling on a route to Asia that did not exist.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">For most of history, Europe, Africa, Asia, and the Americas developed largely apart from one another. That began to change in the late 1400s, when a handful of European kingdoms started sending ships into open ocean, farther than anyone from their countries had sailed before. This lesson looks at why they took that risk, what made the voyages possible, and why none of what followed was guaranteed to happen the way it did.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the political, economic, and religious motives that pushed European kingdoms toward Atlantic exploration in the late 1400s.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how new ship designs and navigation tools made ocean crossings possible.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the outcomes of early exploration were not certain or inevitable.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how specific events in Spain in 1492 affected the timing of Columbus's voyage.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary sources</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <!-- GLOSSARY -->
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">conquistador</strong> <span style="color: #666; font-size: 14px;">(kon-KEES-tuh-dor)</span>: a Spanish or Portuguese soldier and adventurer who took part in conquering land in the Americas during the 1500s and 1600s.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">expedition</strong> <span style="color: #666; font-size: 14px;">(ek-spuh-DISH-uhn)</span>: a journey made by a group of people for a specific purpose, such as exploring unfamiliar land.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">exploration</strong> <span style="color: #666; font-size: 14px;">(ek-spluh-RAY-shuhn)</span>: the act of traveling into or through an unfamiliar place in order to learn about it.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHY EUROPE LOOKED WEST</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Trade, Faith, and Rivalry</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the late 1400s, European merchants had grown used to buying spices, silk, and other goods that came overland from Asia, usually passing through territory controlled by the Ottoman Empire. Every trader along that route added a markup, so anyone who could find a direct sea route stood to make a fortune. That was reason enough for kings and queens to fund risky voyages. It was not the only reason.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Religion mattered too. Many Christians in this period believed spreading their faith to new peoples was a genuine duty, and rulers often described new voyages partly in those terms. Rivalry mattered as well. Portugal had spent decades sending ships farther and farther down the coast of Africa, and by the 1480s had nearly found a sea route to Asia that way. Spain, freshly unified under Ferdinand and Isabella and eager not to fall behind its neighbor, was looking for its own route, even if that meant sailing the other direction, straight across the open Atlantic.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">None of this was some grand plan unfolding on schedule. It was a mix of ordinary human motives: profit, faith, pride, and the fear of being outdone by a rival kingdom. Christopher Columbus, the Genoese sailor who convinced Spain's monarchs to fund his voyage west, was not acting out of history's script either. He was a commoner hoping to win titles, wealth, and a share of whatever he found, and he had already been turned down by Portugal and by Spain once before Isabella finally agreed to fund him in 1492.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Contrary to a popular myth, educated Europeans in 1492 did not believe the earth was flat. The advisors who doubted Columbus's plan did so because they thought his estimate of the distance to Asia was far too short, not because they feared he would sail off an edge. It turned out the skeptics were right about the math and wrong about the outcome: Columbus really had underestimated the distance badly, but there happened to be land in the way that nobody in Europe knew existed.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Portugal's head start had a name attached to it: Prince Henry, remembered afterward as Henry the Navigator, who spent decades in the early 1400s sponsoring voyage after voyage down the West African coast without ever sailing on one himself. His captains mapped new stretches of coastline and slowly proved that a sea route around Africa might actually be possible. By the 1480s, Portuguese ships had rounded the southern tip of Africa, and Spain could see exactly where that progress was headed. Pressure from the east made the timing worse for anyone hoping to avoid a sea voyage altogether. In 1453, Ottoman forces captured Constantinople, tightening their grip on the overland routes traders had used for centuries to move goods between Asia and Europe. A sea route was starting to look less like an alternative and more like a necessity.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: what do you think mattered most in pushing European kingdoms to sail into the unknown Atlantic? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Money was a huge factor. Spain and Portugal both wanted a direct route to Asian goods without paying middlemen along the overland trade routes.">&#128176; The promise of gold and trade</button>
+                <button data-response="Faith mattered too. Many European Christians in this period believed spreading their religion was a genuine duty, and rulers often framed voyages partly in those terms.">&#10013;&#65039; Religious mission</button>
+                <button data-response="Rivalry was real. Once Portugal found a route around Africa, Spain didn't want to be left behind, and that competition sped everything up.">&#128081; Rivalry between kingdoms</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; SPAIN'S MOMENT</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Why 1492, Specifically</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Spain's timing was not an accident, but it was not inevitable either. Ferdinand of Aragon and Isabella of Castile had married in 1469, joining two kingdoms that had previously operated as rivals. For most of their reign, their attention and their treasury were tied up in a long military campaign against Granada, the last Muslim-ruled kingdom on the Iberian Peninsula. That campaign finally ended in January 1492, when Granada surrendered. Only with that war concluded, and with Spain unified and confident for the first time in generations, did Isabella have the freed-up attention, money, and appetite for risk to fund an unproven sailor's proposal to reach Asia by sailing the wrong way entirely.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Had the war against Granada dragged on another few years, there is no guarantee Isabella would have funded Columbus at all, or that she would have done it in time to beat Portugal to whatever lay across the Atlantic. A specific fact, like the timing of one military campaign's end, could have changed the entire outcome. That is worth remembering whenever a chain of events looks, in hindsight, like it had to happen the way it did.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE SHIPS AND TOOLS THAT MADE IT POSSIBLE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">New Technology, Real Risk</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Wanting to cross an ocean and being able to were two different things. A few practical advances made the attempt possible. Portuguese shipbuilders had developed the caravel, a smaller, faster ship with triangular lateen sails that could sail effectively against the wind, not just with it. Sailors also had better tools for finding their way once land was out of sight: the magnetic compass, adopted from Chinese navigators; the astrolabe and the simpler quadrant, both used to estimate latitude by measuring the angle of the sun or stars above the horizon; and portolan charts, detailed coastal maps that had been improving for more than a century. None of these tools could tell a sailor exactly where he was in open ocean, far from any coastline, but together they made a rough, workable estimate possible for the first time.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Columbus and his pilots relied heavily on a technique called dead reckoning: tracking speed, direction, and elapsed time to estimate how far the ship had traveled, then correcting that estimate whenever a reading from the sun or stars was possible. It was more art than exact science, and even a skilled navigator's estimate could drift significantly off course after weeks without sighting land.</p>
+
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; HELPFUL TO KNOW</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Columbus's 1492 fleet had three ships: the Ni&ntilde;a and the Pinta, both small, fast caravels, and the Santa Mar&iacute;a, a larger, slower cargo ship called a nao. The Santa Mar&iacute;a eventually ran aground off the island of Hispaniola later that same voyage.</div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 10px 0;">None of this technology guaranteed success. It only made the attempt possible. Sailors on these voyages faced real dangers: starvation and scurvy if supplies ran out on a longer crossing than expected, disease spreading fast in cramped quarters, sudden storms, and the genuine possibility of getting lost with no way to signal for help. On Columbus's own crossing, weeks passed with no sign of land at all, and some of his crew reportedly began pressing him to turn back before they ran out of food. A sailor who signed on for a voyage like this had no way of knowing whether he would ever see home again. Whatever mix of profit, faith, and ambition drove someone to make that choice, it took real nerve to actually go through with it.</p>
+    </div>
+
+    <!-- What You'll Do Next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 1.2: Columbus, Contact, and a New World Debate</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see what actually happened when Columbus's ships reached land, and why historians still argue about how to weigh what followed.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 1.1: Columbus's Letter</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Columbus's own 1493 letter announcing what he found, and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Week 1 reading quiz, discussion, and VR activity</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete these in Canvas once you've finished both of this week's lessons.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Spain's gamble paid off in a way nobody involved actually expected. In the next lesson, you'll look at what happened when Columbus's ships reached land in October 1492, and the argument historians still have about how to judge what that moment set in motion.</p>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.1 &middot; Europe Looks West: The Age of Exploration Begins</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
