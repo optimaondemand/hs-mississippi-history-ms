@@ -1,0 +1,218 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 4 - Lesson 4.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 4.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 14px; }
+    .flip-grid .ow-flip { flex: 1; min-width: 160px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Mississippi's First Nations and Their Land</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Chickasaw, Choctaw, Natchez: Nations of the Land</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi's First Nations and Their Land</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Chickasaw, Choctaw, Natchez: Nations of the Land</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Three major Native nations called the land that is now Mississippi home, each with its own territory, government, and way of life.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This lesson looks more closely at the <em>Choctaw</em>, the <em>Chickasaw</em>, and the <em>Natchez</em>, the three Native nations whose homelands most directly overlapped what is now the state of Mississippi, and at how each nation organized itself, governed itself, and lived on this land in the centuries before European settlers arrived in large numbers.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the homelands and basic social organization of the Choctaw, Chickasaw, and Natchez nations.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Mississippi's geography shaped the cultural development of each nation.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words from Lesson 4.1, plus two nation names appearing for the first time, are worth reviewing here.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">chiefdom</strong> <span style="color: #666; font-size: 14px;">(CHEEF-duhm)</span>: a society led by a single powerful chief, larger and more organized than a small band or village but smaller than a state.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;"><em>Choctaw</em></strong> <span style="color: #666; font-size: 14px;">(CHOK-taw)</span>: a Native American nation whose homeland spanned much of central and southern Mississippi.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;"><em>Chickasaw</em></strong> <span style="color: #666; font-size: 14px;">(CHIK-uh-saw)</span>: a Native American nation whose homeland centered on what is now northern Mississippi.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">mound builders</strong> <span style="color: #666; font-size: 14px;">(mownd BIL-derz)</span>: a general term for Native American societies that constructed large earthen mounds for religious, political, or burial purposes.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE CHOCTAW AND THE CHICKASAW</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Two Nations, Two Ways of Governing</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Choctaw nation's homeland spanned much of what is now central and southern Mississippi, organized around dozens of towns grouped into three main regional divisions. Unlike a single centralized chiefdom, Choctaw political authority was distributed. Town leaders and regional leaders made decisions through discussion and consensus rather than through the absolute command of one supreme ruler, an arrangement well suited to a nation spread across a large territory with many separate farming communities. Choctaw towns supported themselves through farming corn, beans, and squash, supplemented by hunting deer and other game in the surrounding forests and prairies.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Choctaw towns themselves were substantial settlements, often built around a central plaza used for community gatherings, ball games, and ceremonies. Houses were typically built from wood frames covered with woven cane, plaster, or bark, arranged in clusters that reflected extended family and clan groupings rather than a single uniform town plan. This arrangement gave Choctaw towns a resilience that a more centralized society sometimes lacked. The loss of one town's leader did not threaten the stability of the nation as a whole, since authority and decision-making were never concentrated in a single person or place to begin with.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Choctaw society organized family life through a clan system, in which a person's identity and social relationships traced primarily through their mother's line rather than their father's. Clan membership determined who a person could marry, since marrying within one's own clan was forbidden, and clan relationships created bonds of obligation and support that stretched across many towns, not just within a single community. Women held significant authority within this system, particularly over agricultural land and household affairs, even though town and regional leadership positions were generally held by men. A Choctaw household's fields, tools, and harvested crops typically belonged to the women of that household, giving women real economic power within a system where political office was not usually theirs to hold.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The Chickasaw nation's homeland centered on what is now northern Mississippi, extending into parts of present-day Tennessee and Alabama. Chickasaw society was smaller in population than the Choctaw but became known among Europeans for its military strength and effective defense of its territory. The Chickasaw combined farming with hunting and, particularly in later centuries, with trade, developing a reputation among European colonial powers as skilled, difficult-to-defeat negotiators and warriors who successfully resisted several attempts by European powers to conquer or displace them outright, in part by playing rival colonial powers against one another rather than allying with just one. Much of the next several weeks of this course traces how these skills shaped the Chickasaw's relationships with France, Britain, and Spain as each power tried to gain an advantage in the region.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: does it surprise you that a single word like "Choctaw" or "Chickasaw" actually describes a whole nation made up of many separate towns with their own local leadership? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="It's a common assumption, and this lesson is a good place to start unlearning it. These were genuine nations with real internal political structure, not a single undifferentiated group.">&#128100; A bit, yes</button>
+                <button data-response="Good instinct. Treating a nation's name as though it describes one uniform, simple group tends to erase exactly the kind of political complexity this lesson describes.">&#128161; Not really, no</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE NATCHEZ</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Living Link to the Mississippian World</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Where Choctaw and Chickasaw political authority was distributed across many towns and leaders, Natchez society kept a form of centralized, hereditary rule closer to what archaeologists believe was typical of earlier Mississippian chiefdoms. Natchez society was organized around a paramount chief, sometimes called the Great Sun by French colonists who later encountered him, whose authority carried strong religious as well as political weight. Natchez society was also organized into a system of ranked social classes, with nobility, including the chief's own extended family, holding higher status than commoners.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Great Sun's principal town, sometimes called the Grand Village, included multiple mounds still visible today near the modern city of Natchez. One mound supported the Great Sun's residence, and another supported the temple housing an eternal fire tended by designated keepers, a responsibility taken seriously enough that letting the fire go out was treated as a serious failure. This arrangement, home and temple facing each other across a central plaza, reflected in earth and mound-height the close connection Natchez society drew between political authority and religious duty, a physical statement, visible to anyone who visited, of exactly how that society understood its own leadership.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Natchez religious life centered on reverence for the sun, reflected in the title given to the paramount chief and in the design of Natchez temples, which were built atop mounds and oriented in relation to the sun's movement. Natchez oral tradition and religious practice connected the ruling family's authority directly to the sun, giving Natchez government a religious foundation that Choctaw and Chickasaw leadership, distributed among many town and clan leaders, did not share in the same centralized way.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This centralized, hierarchical structure made the Natchez unusually well documented by early European visitors, since French colonists who settled nearby in the early 1700s had far more direct, sustained contact with a single, identifiable ruling structure than they typically had with the more distributed leadership of the Choctaw or Chickasaw. The next primary source comes from one of these French observers, and it remains one of the most detailed surviving firsthand descriptions of any Mississippian-descended society anywhere in North America.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">That same close, sustained contact with French colonists would eventually prove disastrous for the Natchez, whose relationship with the growing French colony of Louisiana grew increasingly strained over disputes about land near the Natchez's own principal town. You will read about how that relationship deteriorated, and about the wider pattern of European settlement in the region, in the weeks ahead. The same closeness that made the Natchez so well documented also made them, in the end, especially exposed to the ambitions of the colonists documenting them.</p>
+
+        <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#9889; TAP TO REVIEW &middot; THREE NATIONS AT A GLANCE</div>
+            <div class="flip-grid">
+                <div class="ow-flip" tabindex="0">
+                    <div class="ow-flip-front" style="font-size:17px;color:#0E1C42;"><em>Choctaw</em></div>
+                    <div class="ow-flip-back" style="font-size:14px;line-height:1.5;">Central/southern Mississippi. Many towns, distributed leadership by discussion and consensus.</div>
+                </div>
+                <div class="ow-flip" tabindex="0">
+                    <div class="ow-flip-front" style="font-size:17px;color:#0E1C42;"><em>Chickasaw</em></div>
+                    <div class="ow-flip-back" style="font-size:14px;line-height:1.5;">Northern Mississippi. Smaller population, known for military strength and skilled negotiation.</div>
+                </div>
+                <div class="ow-flip" tabindex="0">
+                    <div class="ow-flip-front" style="font-size:17px;color:#0E1C42;"><em>Natchez</em></div>
+                    <div class="ow-flip-back" style="font-size:14px;line-height:1.5;">Mississippi River bluffs. Centralized, hereditary chief and ranked social classes.</div>
+                </div>
+            </div>
+            <button class="widget-reset" style="margin-top: 12px;">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 4.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read an 18th-century description of Choctaw and Chickasaw peoples and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">These three nations did not exist in isolation from one another, or from the Europeans who began arriving on their land. Next week looks at the alliances, rivalries, and lasting legacy that shaped relationships between Mississippi's Native nations and the outside world.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.2 &middot; Chickasaw, Choctaw, Natchez: Nations of the Land</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var scope = reset.closest('.optima-widget') || reset.parentElement;
+      scope.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      scope.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      scope.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

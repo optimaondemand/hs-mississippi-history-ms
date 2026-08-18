@@ -1,0 +1,249 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 4 - Lesson 4.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 4.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Mississippi's First Nations and Their Land</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Mound Builders: Mississippi's First Nations and the Land That Shaped Them</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi's First Nations and Their Land</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Mound Builders: Mississippi's First Nations and the Land That Shaped Them</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Long before any European set foot in Mississippi, people here were building earthen mounds taller than a five-story building, some of which still stand today.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Mississippi's human history stretches back thousands of years before contact with Europe. This lesson introduces the Mississippian culture, the mound-building societies that flourished across the region for centuries, and looks at how the land itself, its rivers, its fertile soil, its climate, shaped how these societies lived, organized themselves, and eventually changed.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the Mississippian mound-building culture and its major achievements.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Mississippi's geography shaped the cultural development of its First Nations.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">chiefdom</strong> <span style="color: #666; font-size: 14px;">(CHEEF-duhm)</span>: a society led by a single powerful chief, larger and more organized than a small band or village but smaller than a state.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">mound builders</strong> <span style="color: #666; font-size: 14px;">(mownd BIL-derz)</span>: a general term for Native American societies that constructed large earthen mounds for religious, political, or burial purposes.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">Mississippian culture</strong> <span style="color: #666; font-size: 14px;">(mih-sih-SIH-pee-uhn KUL-cher)</span>: a widespread Native American culture, roughly 800 to 1600 CE, known for mound building, farming, and complex chiefdoms across much of the southeastern and midwestern United States.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;"><em>Natchez</em></strong> <span style="color: #666; font-size: 14px;">(NATCH-iz)</span>: a Native American nation whose homeland centered on the Mississippi River near present-day Natchez, Mississippi.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A CIVILIZATION OF EARTH AND RIVER</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Mississippian World</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Beginning around 800 CE and continuing for roughly eight hundred years, a wide-reaching culture historians call the Mississippian culture flourished across much of what is now the southeastern and midwestern United States, including the land that would become Mississippi. Mississippian peoples were skilled farmers, growing corn, beans, and squash in the fertile soil along the region's rivers, and their farming success supported larger, more permanent settlements than earlier peoples in the region had built.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This shift toward farming and permanent settlement did not happen overnight. Peoples living in the region for thousands of years before the Mississippian period, sometimes grouped under the terms Archaic and Woodland by archaeologists, had already begun cultivating some crops and building smaller earthworks of their own. What made the Mississippian period distinct was the scale and speed of change: corn agriculture became intensive enough to support much larger populations living in permanent towns year-round, rather than smaller groups that might move seasonally to follow food sources.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippian societies organized themselves into chiefdoms, political structures led by powerful chiefs who claimed both political and religious authority. At the center of major Mississippian settlements stood large earthen mounds, built by hand, basketload by basketload, over generations. Some mounds served as platforms for temples or the homes of chiefs, elevated above the surrounding town both physically and symbolically. Others served as burial sites for important individuals. These mounds represented an enormous, sustained community effort, evidence of organized labor and shared purpose on a scale earlier peoples in the region had rarely achieved.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Building a single large mound could take generations, since workers used simple tools, woven baskets, wooden digging implements, and their own labor, without draft animals or wheeled carts to help move earth. A mound grew a little at a time, often through repeated episodes of new soil being added over an existing mound, sometimes after an older structure on top was ceremonially buried and a new one built above it. The finished result was not the work of any single generation, but a monument connecting many generations of the same community to one another and to the land itself.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippian communities were also connected to one another through extensive trade networks. Archaeologists have found seashells from the Gulf of Mexico, copper from the Great Lakes region, and stone from sources hundreds of miles away at Mississippian sites, evidence that these societies were part of a much larger web of exchange stretching across a huge portion of North America, long before any of it had been mapped by Europeans.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Religion shaped Mississippian society as deeply as farming or trade did. Archaeologists have identified shared religious symbols, including specific images of raptors, serpents, and human figures, carved into shell, copper, and stone across many different Mississippian sites, a pattern sometimes called the Southeastern Ceremonial Complex. The wide geographic spread of these shared symbols suggests that Mississippian peoples across a huge region, despite speaking different languages and living under different local chiefs, shared at least some common religious beliefs and practices, likely centered in part on reverence for the sun and for powerful ancestral or supernatural beings.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the time sustained European contact began in the 1500s and 1600s, many of the largest Mississippian mound centers had already been abandoned or greatly reduced in population, for reasons archaeologists still debate, including climate change, warfare, and shifting political alliances among chiefdoms. This means most Europeans who eventually settled in Mississippi never saw a fully active Mississippian mound center in operation. The Natchez, described later in this lesson, were a crucial exception, and much of what historians know about how a living Mississippian-style society actually functioned comes from what Europeans recorded about them specifically. Without the Natchez, and the written accounts French colonists left of them, historians would be forced to reconstruct nearly all of Mississippian religious and political life from archaeology alone, without a single detailed firsthand description to check that reconstruction against.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: what do you picture when you hear the phrase "mound builders"? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Simple burial sites are part of the story, but Mississippian mounds also served as platforms for temples and chiefs' homes, and represented a huge organized community effort.">&#9973; Simple burial mounds</button>
+                <button data-response="You're closer than you might think. Mississippian societies really were organized, complex chiefdoms with farming, trade networks, and monumental architecture.">&#127943; A complex, organized society</button>
+                <button data-response="That's a common gap, and this lesson is a good place to start closing it. Mississippian mound builders were skilled farmers and engineers whose societies rivaled other complex civilizations of their time.">&#129300; Honestly, not much</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; HOW THE LAND SHAPED THE PEOPLE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Geography and Culture</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippi's geography, the same rivers, fertile soil, and mild climate you read about earlier this quarter, made this kind of society possible in the first place. The Mississippi River and its tributaries deposited rich alluvial soil that supported the intensive corn farming Mississippian societies depended on, and rivers doubled as highways, allowing goods, ideas, and people to move across long distances relatively easily compared to overland travel. Without this combination of farmland and water transportation, the large, settled populations that built and maintained major mound complexes would have been far harder to sustain.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">One of the most important Mississippian-descended societies in the region was the Natchez, whose homeland centered on the bluffs above the Mississippi River near the site of the modern city that bears their name. Unlike many other Mississippian societies, which had declined or transformed by the time Europeans arrived, the Natchez maintained a mound-centered, chief-led society well into the 1700s, giving European visitors a rare direct look at a way of life that had otherwise mostly vanished from the historical record by the time it could be written down.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The bluffs the Natchez called home were themselves a product of Mississippi's particular geography, the same Loess Bluffs you read about two weeks ago, formed from wind-blown silt deposited during the last Ice Age. These bluffs offered high, well-drained ground safe from the river's frequent flooding, while the fertile land immediately around them supported the intensive corn agriculture Natchez society depended on. The site was, in other words, close to an ideal location by the standards of a farming society that also needed reliable defense and protection from floodwaters, and the Natchez were far from the only Mississippian-descended people to recognize that advantage.</p>
+
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; MISSISSIPPI HISTORY: WINTERVILLE MOUNDS</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Near present-day Greenville, Mississippi, the Winterville Mounds site preserves more than twenty earthen mounds spread across over forty acres, built and used as a ceremonial center between roughly 1000 and 1450 CE. Its largest mound rises about fifty-five feet, one of the tallest surviving prehistoric mounds in the state. Archaeologists believe the people who built and used Winterville were most likely ancestral to the Natchez. The site is preserved today by the Mississippi Department of Archives and History and is open for visitors.</div>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; MISSISSIPPIAN SOCIETY</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. Fertile river soil and water transportation together made large, settled, mound-building societies possible in the first place." data-hint="Reread the lesson's explanation of what specifically made large settled populations possible.">
+                <div class="widget-row-prompt">1. Why was Mississippi's river geography so important to Mississippian society?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Rivers provided the only source of drinking water in the region</button>
+                    <button data-choice="1">Rivers prevented rival chiefdoms from ever making contact with each other</button>
+                    <button data-choice="2">Fertile river soil supported farming, and rivers served as transportation routes</button>
+                    <button data-choice="3">Rivers were considered too dangerous to settle near</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0" data-fb="Right. Unlike many other Mississippian societies, the Natchez maintained their mound-centered society into the 1700s, giving Europeans a direct look at a way of life largely gone elsewhere by then." data-hint="Think about what made the Natchez unusual compared to other Mississippian-descended societies by the time Europeans arrived.">
+                <div class="widget-row-prompt">2. What made the Natchez unusual among Mississippian-descended societies by the 1700s?</div>
+                <div class="widget-options">
+                    <button data-choice="0">They still maintained a mound-centered, chief-led society when Europeans arrived</button>
+                    <button data-choice="1">They were the only society to ever build a mound</button>
+                    <button data-choice="2">They had no contact with any other Native nations</button>
+                    <button data-choice="3">They lived exclusively on the Gulf Coast</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 4.2: Chickasaw, Choctaw, Natchez</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to look more closely at three of Mississippi's most significant Native nations.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 4.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read a firsthand account of Natchez society and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The Natchez were only one of several major Native nations whose homelands overlapped what is now Mississippi. Next, you'll look more closely at the Chickasaw and Choctaw as well, and at the culture each nation built on this same land.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.1 &middot; The Mound Builders: Mississippi's First Nations and the Land That Shaped Them</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
