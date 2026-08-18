@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 3 - Lesson 3.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 3.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">The River, the Coast, and Mississippi's Disasters</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">When the Water Rose: 1927, Camille, and Katrina</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The River, the Coast, and Mississippi's Disasters</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">When the Water Rose: 1927, Camille, and Katrina</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In the spring of 1927, the same river that built Mississippi's economy broke through its levees and put much of the Delta underwater for months.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Geography that builds an economy can also destroy it. This lesson looks at three of Mississippi's most significant natural disasters, the Great Flood of 1927 and Hurricanes Camille and Katrina, and at the lasting political, economic, and social effects each one left behind, effects that in some cases are still shaping decisions Mississippians make today.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the causes and consequences of the Great Flood of 1927 in Mississippi.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> assess the political, economic, and social effects of Hurricanes Camille and Katrina on Mississippi's Gulf Coast.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words from Lesson 3.1 are worth reviewing again here.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">levee</strong> <span style="color: #666; font-size: 14px;">(LEV-ee)</span>: a raised bank built along a river to prevent flooding.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">port</strong> <span style="color: #666; font-size: 14px;">(port)</span>: a town or city on a river or coast where ships load and unload goods.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">commerce</strong> <span style="color: #666; font-size: 14px;">(KAHM-urs)</span>: the buying and selling of goods, especially on a large scale.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE GREAT FLOOD OF 1927</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A River Breaks Its Banks</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the 1920s, a system of levees running along the Mississippi River was supposed to keep the river within its banks even during heavy floods. Engineers of the era generally believed that levees alone, built high and strong enough, could control the river completely, without the need for spillways or other outlets to relieve pressure during extreme floods. This approach, sometimes called the "levees only" policy, would be tested severely in 1927.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In the spring of 1927, after months of unusually heavy rainfall across the entire Mississippi River watershed, which stretches from the Rocky Mountains to the Appalachians, the levees failed in more than a hundred places. Water poured across the Delta and into other low-lying areas along the river, eventually flooding an area roughly the size of several states combined and displacing hundreds of thousands of people across the region, many of whom lost their homes, farm animals, and stored crops entirely. In parts of the Delta, floodwaters stood for months before finally receding.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The flood's effects fell unevenly. In much of the Delta, Black sharecroppers and tenant farmers, who made up the majority of the agricultural workforce, were often forced into relief camps and pressed into levee repair labor under harsh conditions, while white landowners frequently had more control over evacuation and relief resources. The flood's handling became a national story, and Secretary of Commerce Herbert Hoover, who oversaw much of the federal relief effort, built much of his subsequent political reputation on his role in the response, even as many Black Mississippians later described that same relief effort as unequal and, at times, coercive.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The flood also had a lasting demographic effect. In its aftermath, thousands of Black Mississippians who had experienced both the disaster itself and its unequal recovery chose to leave the state as part of the broader Great Migration to Northern and Western cities already underway. For many families, the flood was less a single turning point than one more reason, added to years of low wages and limited rights, to leave a place that had made clear how little protection it was prepared to offer them during a crisis.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Politically, the flood pushed Congress to pass the Flood Control Act of 1928, which put the federal government, rather than local levee boards alone, in charge of managing the lower Mississippi River going forward. This act abandoned the "levees only" approach in favor of a system that also included floodways and spillways designed to divert extreme floodwaters away from populated areas, a shift in both engineering philosophy and government responsibility that still shapes flood control policy today.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: when you think of a natural disaster's effects, do you think first about the immediate damage, or about the longer-term political and social changes it causes? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Immediate damage is what most people notice first, and it's real and important. But as you'll see in this lesson, it's often not what leaves the longest mark on a place.">&#127964;&#65039; Immediate damage</button>
+                <button data-response="You're anticipating this lesson well. The 1927 flood's political and demographic effects arguably mattered more, in the long run, than the flooding itself.">&#128200; Long-term change</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; CAMILLE AND KATRINA</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Two Storms, Two Generations</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In August 1969, Hurricane Camille struck the Mississippi Gulf Coast as one of the most powerful storms ever recorded to make landfall in the United States, with sustained winds estimated at nearly 190 miles per hour and a storm surge that reached roughly twenty-four feet in some areas. Camille devastated coastal towns including Biloxi, Gulfport, and Pass Christian, destroying thousands of homes and businesses along the coastline almost instantly and killing well over a hundred people in Mississippi alone.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In the storm's aftermath, Mississippi rebuilt much of its coastline in place, often without significantly changing building codes or development patterns. Many residents and officials at the time treated Camille as a once-in-a-lifetime event unlikely to repeat itself in their lifetimes, a belief that shaped how quickly and how similarly the Coast rebuilt in the exact same vulnerable locations. That decision would matter enormously thirty-six years later.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In August 2005, Hurricane Katrina struck the same stretch of coastline with a storm surge even higher than Camille's in many places, in part because decades of coastal development had removed some of the natural barriers, like wetlands and dunes, that once absorbed a portion of a storm's force. Katrina killed more than two hundred people in Mississippi alone and caused damage estimated in the tens of billions of dollars, essentially erasing entire coastal neighborhoods that had been rebuilt after Camille in roughly the same vulnerable locations. Coverage of the disaster focused heavily on New Orleans, but Mississippi's Gulf Coast absorbed the storm's strongest winds and highest surge, a fact often overlooked in accounts that treat Katrina as primarily a Louisiana story.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Katrina's aftermath changed Mississippi's approach to the Coast in ways Camille's had not. New building codes required homes in vulnerable areas to be elevated well above ground level. Insurance requirements and costs rose sharply, and some coastal homeowners found themselves unable to obtain affordable coverage at all. Casino gaming, previously required by state law to operate on barges floating just offshore, was allowed to move onto land after Katrina destroyed many of those same barge-based casinos, reshaping the Coast's economy once again.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The lesson many state and local officials drew from comparing the two storms was that rebuilding exactly as before, which had seemed reasonable enough after Camille, was no longer treated as an acceptable option after Katrina, even though it took a second devastating storm to force that conclusion. Recovery took years rather than months, and some neighborhoods that had existed since before Camille were never rebuilt at all, their former residents scattered to other parts of the Coast or out of the state entirely.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CAUSE, EFFECT, OR CONSEQUENCE?</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="3" data-fb="Right. The Flood Control Act of 1928 shifted responsibility for managing the lower Mississippi River from local levee boards to the federal government." data-hint="Think about which level of government took on new authority as a direct result of the flood.">
+                <div class="widget-row-prompt">1. What was one lasting political effect of the Great Flood of 1927?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Mississippi banned all future levee construction</button>
+                    <button data-choice="1">The state capital was relocated to higher ground</button>
+                    <button data-choice="2">County government was abolished along the river</button>
+                    <button data-choice="3">The federal government took on primary responsibility for managing the lower Mississippi River</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0" data-fb="Right. After Camille, the coast largely rebuilt in place without major changes to building codes, a decision that left it vulnerable when Katrina struck the same areas decades later." data-hint="Consider what Mississippi did, or did not, change about coastal development after Camille specifically.">
+                <div class="widget-row-prompt">2. Why did Hurricane Katrina's damage build so directly on decisions made after Hurricane Camille?</div>
+                <div class="widget-options">
+                    <button data-choice="0">The Coast largely rebuilt in place after Camille without major changes to building codes or development patterns</button>
+                    <button data-choice="1">Camille and Katrina followed the exact same storm path by coincidence</button>
+                    <button data-choice="2">Mississippi ignored Camille completely and built no new structures afterward</button>
+                    <button data-choice="3">Katrina was a much weaker storm than Camille</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; MISSISSIPPI TODAY</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Mississippi's Gulf Coast today uses stricter building codes, elevation requirements, and improved storm forecasting that did not exist in 1969 or, in some cases, even in 2005. Emergency management officials continue to study Katrina closely when planning for future storms, though no set of regulations can fully eliminate the risk that comes with living on a low, hurricane-exposed coastline.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 3.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Examine photographs from the 1927 flood and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Having covered Mississippi's land, water, and disasters, next week turns to the people who lived on this land long before any European arrived: Mississippi's First Nations, and the geography that shaped their own cultures and history.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.2 &middot; When the Water Rose: 1927, Camille, and Katrina</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

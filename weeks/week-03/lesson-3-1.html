@@ -1,0 +1,243 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 3 - Lesson 3.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 3.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">The River, the Coast, and Mississippi's Disasters</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The River and the Coast: How Geography Built an Economy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The River, the Coast, and Mississippi's Disasters</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The River and the Coast: How Geography Built an Economy</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A single plume of smoke on the horizon could turn a sleepy river town into a rush of activity within minutes. That was the power a steamboat held over Mississippi's economy.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Before railroads and highways, Mississippi's water routes were its economy. This lesson looks at how the Mississippi River and the Gulf Coast shaped where towns grew, what people produced, and how goods and people actually moved through the state in the 1800s, and why two regions of the same state ended up building such different economies out of the same basic advantage: access to water.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the Mississippi River shaped the state's economic and social development.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate how the Gulf Coast contributed to Mississippi's technological and economic development.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">levee</strong> <span style="color: #666; font-size: 14px;">(LEV-ee)</span>: a raised bank built along a river to prevent flooding.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">port</strong> <span style="color: #666; font-size: 14px;">(port)</span>: a town or city on a river or coast where ships load and unload goods.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">commerce</strong> <span style="color: #666; font-size: 14px;">(KAHM-urs)</span>: the buying and selling of goods, especially on a large scale.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE RIVER AS HIGHWAY</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Steamboats and the Cotton Economy</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Before steamboats, river travel was largely a one-way trip. Flatboats and keelboats could carry cotton, grain, and other goods downstream to New Orleans easily enough, riding the current, but getting a boat back upstream against that same current required grueling manual labor, poling and rowing for weeks, or simply abandoning the boat at its destination and walking home. That one-way limitation shaped the entire river economy before the 1810s: goods flowed south easily, but people, mail, and manufactured goods moved north only slowly and expensively.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Steamboats, introduced to the Mississippi River in the 1810s, changed that completely. A steam engine could push a boat upstream against the current nearly as easily as downstream, and by the 1830s steamboats dominated river commerce entirely. A planter with a crop of cotton to sell no longer needed to depend on a one-way raft. He could load it onto a steamboat, sell it at a port city, and have goods, mail, or news shipped back upriver within weeks rather than months. The change in speed and reliability transformed what kinds of businesses were even possible along the river.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This transformed river towns almost overnight. Natchez, perched on the bluffs above the river, grew wealthy as one of the busiest cotton ports on the entire Mississippi, and its wealthiest planters and merchants built some of the grandest homes in the antebellum South using fortunes made almost entirely on cotton shipped by river. Vicksburg, farther north, saw its cotton trade grow from a few thousand bales a year in the 1820s to well over a hundred thousand bales by the 1840s, as planters throughout the surrounding hill country and Delta funneled their crops toward its docks. Towns that sat directly on the river prospered. Towns that did not often struggled to compete until railroads finally reached them decades later.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Railroads eventually began to change this pattern, though slowly at first. Mississippi's earliest rail lines, built in the 1830s and 1840s, were short and mostly connected inland areas to a nearby river port rather than replacing the river altogether. It would take decades, well past the Civil War, before railroads genuinely rivaled the river as the state's primary way of moving goods. Until then, geography, not engineering, decided which Mississippi towns grew into cities and which stayed small, and a town's fortunes could shift dramatically depending on nothing more complicated than which bend of the river it happened to sit beside, or how deep the water ran at its own particular landing.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: if you had to guess, what do you think mattered more to a 19th-century Mississippi town's success: sitting on the river, or having good farmland nearby? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="River access mattered enormously. Even a town surrounded by excellent farmland struggled if it had no fast, cheap way to actually get crops to market.">&#9973; River access</button>
+                <button data-response="Farmland mattered too, since a river town with nothing to ship had little reason to grow. The two usually worked together rather than one substituting for the other.">&#127806; Farmland quality</button>
+                <button data-response="You're right that it's not really either/or. The towns that grew fastest almost always had both good land nearby and a fast way to move what that land produced.">&#129300; Both, really</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE GULF COAST'S DIFFERENT ECONOMY</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Shipping, Fishing, and Trade</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">While the river shaped inland Mississippi's economy around cotton, the Gulf Coast developed differently, and it is worth remembering that the two regions are not equally sized. Mississippi's Gulf Coast is a comparatively narrow strip of the state, while the river borders the entire western edge, which is part of why the cotton economy came to define outsiders' image of the whole state even though the Coast's economy operated on entirely different terms.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"> Coastal towns such as Biloxi and Pascagoula built their early economies around fishing, shipbuilding, and trade with other Gulf ports, including New Orleans, Mobile, and ports in the Caribbean. The Coast's economy depended less on farmland and more on direct access to open water and the ships that could reach it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This difference went back to the colonial period, which you'll read about in detail in the coming weeks. French colonists established some of the earliest permanent European settlements in the region directly on the Coast, long before American settlers pushed into the interior in large numbers. That head start gave the Coast a distinct culture and economy that persisted long after Mississippi became a state, one oriented outward toward the Gulf and its shipping lanes rather than inward toward the cotton lands of the Delta and the Black Prairie.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Shipbuilding grew naturally out of the Coast's access to timber and open water. Local shipyards built the small schooners and sloops that connected Coast towns to New Orleans and other Gulf ports long before larger oceangoing vessels became common. This gave the Coast's economy a distinct character built around craftsmen, sailors, and small-scale trade, rather than the large cotton plantations that dominated so much of inland Mississippi, even though slavery existed on the Coast as well.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the mid-1800s, the Coast had also become known for a very different kind of economic activity: harvesting oysters and shrimp from the Gulf's shallow coastal waters. This industry would grow enormously in the decades after the Civil War, once canning technology made it possible to ship seafood far beyond what could be sold fresh nearby, but its roots lay in the same geographic fact that shaped everything else about the Coast: easy access to the Gulf of Mexico and the productive, shallow waters just offshore.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">River commerce and coastal commerce rarely competed directly with each other, since they served different markets and depended on different kinds of geography. A cotton planter in the Delta had no reason to ship his crop through Biloxi when Vicksburg or Natchez sat much closer and connected directly to the river routes he already used. In this sense, Mississippi in the 1800s functioned less like one unified economy and more like two economies loosely connected by the state government that governed both, a pattern that would not fully change until railroads and highways finally tied the whole state together in the twentieth century.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; RIVER OR COAST?</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Steamboats let planters move heavy cargo like cotton upstream quickly, transforming which towns thrived." data-hint="Think about what specifically changed once boats could reliably travel upstream, against the current.">
+                <div class="widget-row-prompt">1. What made steamboats such a major change for river commerce compared to earlier flatboats?</div>
+                <div class="widget-options">
+                    <button data-choice="0">They were the first boats able to carry cotton at all</button>
+                    <button data-choice="1">They could move heavy cargo upstream quickly, unlike earlier one-way rafts</button>
+                    <button data-choice="2">They eliminated the need for ports entirely</button>
+                    <button data-choice="3">They were powered by wind rather than fuel</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="2" data-fb="Right. The Gulf Coast's economy grew around shipping, fishing, and trade with other Gulf ports, a different foundation than the cotton economy of the river towns." data-hint="Reread the lesson's description of what Biloxi and Pascagoula's early economy actually depended on.">
+                <div class="widget-row-prompt">2. What was the Gulf Coast's early economy built around, in contrast to the river towns?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Large-scale cotton plantations</button>
+                    <button data-choice="1">Gold and silver mining</button>
+                    <button data-choice="2">Shipping, fishing, and trade with other Gulf ports</button>
+                    <button data-choice="3">Cattle ranching</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 3.2: When the Water Rose</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see what happened when the same river and coast that built Mississippi's economy turned destructive.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 3.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read a famous eyewitness description of a steamboat's arrival and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The same river and coast that built Mississippi's economy could also destroy what people had built. Next, you'll read about the Great Flood of 1927 and the hurricanes that have periodically reshaped the state's Gulf Coast.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.1 &middot; The River and the Coast: How Geography Built an Economy</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
