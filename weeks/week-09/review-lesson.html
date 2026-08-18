@@ -1,0 +1,227 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 9 - Quarter 1 Review
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Quarter 1 Review</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .timeline { border-left: 3px solid #C7922C; margin: 14px 0 14px 10px; padding-left: 20px; }
+    .timeline-item { margin-bottom: 14px; position: relative; }
+    .timeline-item::before { content: ""; position: absolute; left: -25px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #C7922C; }
+    .timeline-year { font-size: 13px; color: #C7922C; }
+    .timeline-text { font-size: 16px; color: #1a2340; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 9</div>
+        <div style="font-size: 12px; color: #666;">Quarter 1 Review: From Contact to Colonial Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Review Lesson</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">From Contact to Colonial Mississippi</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Quarter 1 Review</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">From Contact to Colonial Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Review Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Eight weeks ago, this course began with Columbus sailing the wrong way toward Asia. It ends this quarter with three European flags having each flown, briefly, over the same stretch of Mississippi riverbank.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This review lesson does not introduce new material. It draws together the threads from Weeks 1 through 8 so you can see the whole arc of the quarter at once, before the quarter exam.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS REVIEW YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace the major events and themes of Weeks 1 through 8 in sequence.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> connect Mississippi's geography, First Nations, and colonial history into a single overall narrative.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE LAND AND ITS FIRST PEOPLES</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Geography Comes First</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This quarter began with geography for a reason: everything that followed depended on it. Weeks 2 and 3 established Mississippi's major regions, the Delta, the Hills, the Piney Woods, and the Gulf Coast, and showed how the Mississippi River and Gulf Coast built two genuinely different economies, one centered on river commerce and cotton, the other on shipping and trade with other Gulf ports. That same geography also produced disaster: the levee failures of 1927 and the hurricanes that have repeatedly struck the Coast, Camille in 1969 and Katrina in 2005, showed that the same features that built Mississippi's economy could also destroy what people built on top of it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Weeks 4 and 5 turned to the people who lived on this land first. The Mississippian mound-building culture, sustained by the same fertile river soil, produced complex chiefdoms and sites like Winterville Mounds. The Natchez carried this Mississippian pattern into the historical period, giving Europeans a rare direct look at a living version of it, while the Choctaw and Chickasaw built different, more distributed forms of government spread across many towns. All three nations, along with smaller nations like the Biloxi, built trade relationships and alliances with European powers, alliances that sometimes turned Native rivalries into proxy conflicts, and that in the Natchez's case ended in the loss of political independence entirely by 1731. Yet Native history in Mississippi did not end there, as the Mississippi Band of Choctaw Indians' continued self-government today makes clear.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you continue: which single idea from Weeks 1 through 5 do you feel least confident about? (No wrong answer, just check in with yourself before the exam.)</div>
+            <div class="widget-options">
+                <button data-response="Go back and reread that week's lesson pages before the exam. Geography and its economic effects come up again and again throughout this course.">&#127757; Mississippi's regions and geography</button>
+                <button data-response="Go back and reread Weeks 4 and 5. The distinction between Mississippian chiefdoms, the Natchez, and the Choctaw and Chickasaw's different political structures is worth having solid before the exam.">&#127963;&#65039; Mississippi's First Nations</button>
+                <button data-response="Go back and reread the alliance and legacy material in Week 5. The gap between Native nations' different long-term outcomes is a common exam theme.">&#129309; Alliances and legacy</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THREE FLAGS OVER THE SAME LAND</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Spain, France, and England, in Sequence</h3>
+        <div class="timeline">
+            <div class="timeline-item"><div class="timeline-year">1540&ndash;1541</div><div class="timeline-text">De Soto's Spanish expedition passes through Mississippi, fights the Chickasaw at Chicaza, crosses the Mississippi River, and leaves without founding any lasting settlement.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1699</div><div class="timeline-text">Iberville's French expedition builds Fort Maurepas near Biloxi, the first lasting European settlement, more than a century after De Soto and seventeen years after La Salle's ceremonial claim.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1724</div><div class="timeline-text">France issues the Code Noir for Louisiana, regulating enslaved labor and religious life, a code whose influence outlasts French rule itself.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1763</div><div class="timeline-text">The Treaty of Paris transfers the Natchez District from France to Britain, forming part of the new colony of British West Florida.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1779</div><div class="timeline-text">Spain seizes West Florida from Britain during the American Revolution, beginning a new Spanish period in the Natchez District.</div></div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Weeks 6 through 8 traced this sequence of European powers directly. Each power arrived with different priorities, Spanish conquest, French trade and labor, English land-grant settlement, and each left something behind that outlasted its own political control: Spain's early contact and its disease legacy, France's Code Noir and place names, England's land-grant patterns and English-speaking settlers. None of these outcomes were inevitable. Contingency, not destiny, decided which power controlled which piece of land at which moment, decisions made as often in European treaty rooms as on Mississippi soil itself.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Notice, too, how many of this quarter's themes echo across weeks that otherwise seem unrelated. The gap between a formal claim and actual control, first raised with La Salle's 1682 ceremony, applies just as well to European claims over Native land generally. The idea that institutions outlast the governments that create them, first raised with the Code Noir's influence on later slave codes, applies just as well to the land claims Spain preserved from British rule in the Natchez District. A quarter that might look, week by week, like a series of separate topics is really one connected argument about geography, contact, and the layered, contingent way Mississippi's history actually unfolded.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PUTTING THE QUARTER TOGETHER</div>
+            <div class="widget-question">A last check before the exam. Read each item carefully.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. De Soto's expedition (1540-41) came first, well over a century before Iberville's lasting French settlement (1699)." data-hint="Reread the timeline above and check the actual sequence of dates.">
+                <div class="widget-row-prompt">1. Which came first: De Soto's expedition, or Iberville's founding of French Louisiana?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Iberville's expedition, by several decades</button>
+                    <button data-choice="1">They happened in the same year</button>
+                    <button data-choice="2">De Soto's expedition, by more than a century</button>
+                    <button data-choice="3">Iberville's expedition, by several centuries</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Each power's colonial approach, and what it left behind, was different, but none of these outcomes were guaranteed in advance." data-hint="Reread this review's point about contingency versus destiny.">
+                <div class="widget-row-prompt">2. What does this quarter's overall pattern suggest about Mississippi's colonial history?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Every European power followed an identical strategy</button>
+                    <button data-choice="1">Each power's approach differed, and none of the outcomes were inevitable</button>
+                    <button data-choice="2">Only one European power ever had any real influence on Mississippi</button>
+                    <button data-choice="3">Native nations had no role in shaping any of these outcomes</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 1 Review Activity</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the review activity in Canvas, a synthesis exercise covering all of Weeks 1 through 8.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 1 Exam</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the Quarter 1 exam in Canvas, covering only this quarter's material.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Quarter 2 picks up where this quarter leaves off: Mississippi's colonial and revolutionary periods, the road to statehood, and the antebellum society that formed in the decades before the Civil War.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Review Lesson</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Quarter 1 Review &middot; From Contact to Colonial Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
