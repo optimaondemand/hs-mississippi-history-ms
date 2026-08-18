@@ -1,0 +1,274 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 2 - Lesson 2.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 2.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+
+    /* Regional map widget (bespoke labeled-hotspot engine) */
+    .map-region { cursor: pointer; stroke: #ffffff; stroke-width: 2; transition: opacity 0.15s; }
+    .map-region:hover { opacity: 0.85; }
+    .map-region.active { stroke: #0E1C42; stroke-width: 3; }
+    .map-card { display: none; background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 14px 18px; margin-top: 12px; font-size: 16px; color: #1a2340; line-height: 1.55; }
+    .map-card.show { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Mississippi's Geography: Land, Water, and Regions</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Shape of the Land: Mississippi's Regions and Landforms</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi's Geography: Land, Water, and Regions</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Shape of the Land: Mississippi's Regions and Landforms</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Stand in the Mississippi Delta and you could drive an hour without seeing a hill. Drive three hours southeast and you would be climbing through pine-covered hills that feel like a different state.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Mississippi is not one landscape. It is several, stitched together by rivers, ridges, and a coastline, each shaped by different geological forces over millions of years. Every one of Mississippi's later chapters, from where its earliest farms took root to where its cities grew up, traces back in part to which of these regions people happened to settle in. This lesson introduces the major regions that make up the state and the physical features that set Mississippi apart from its neighbors.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify Mississippi's major physical regions, landforms, and soil types.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> differentiate between Mississippi's geographic regions using their physical features.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify and assess the geographic features that set Mississippi apart from other states.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its interactive map</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">alluvial</strong> <span style="color: #666; font-size: 14px;">(uh-LOO-vee-uhl)</span>: describing soil or land built up over time by sediment deposited by moving water, such as a flooding river.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">geographic region</strong> <span style="color: #666; font-size: 14px;">(jee-uh-GRAF-ik REE-juhn)</span>: an area defined by shared physical features, such as similar landforms, soil, or climate.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">landform</strong> <span style="color: #666; font-size: 14px;">(LAND-form)</span>: a natural feature of the earth's surface, such as a hill, plain, ridge, or valley.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE DELTA AND THE HILLS</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Two Landscapes, One State</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Mississippi Delta sits in the northwestern part of the state, between the Mississippi River and the Yazoo River. Despite its name, it is not a river delta in the technical sense. It is a flat, low-lying alluvial plain built up over thousands of years as the Mississippi River flooded again and again, leaving behind layers of rich sediment. That sediment created some of the most fertile farmland in North America, a fact that would shape the region's economy for centuries after Mississippi became a state. That richness came at a price. The same flooding that built the soil also made the region prone to devastating floods long before anyone built a system of levees to try to control the river, a story you'll pick up in more detail next week.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">East and south of the Delta, the land changes dramatically. A band of steep, narrow ridges called the Loess Bluffs runs along the Delta's eastern edge, formed from wind-blown silt deposited during the last Ice Age. Vicksburg, one of Mississippi's most historically significant cities, sits directly atop these bluffs, high enough above the river to give it a commanding view for miles in either direction, a fact that mattered enormously during a Civil War siege you'll study later this year. Farther east and south, the North Central Hills and the Black Prairie form a rolling, hillier landscape with different soil entirely. The Black Prairie takes its name from its dark, chalky soil, formed over an ancient layer of chalk left behind when a shallow sea covered the region tens of millions of years ago. Mississippi's hill country is older, more varied, and geologically stranger than its flat reputation might suggest.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: when you picture Mississippi's landscape, what comes to mind first? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="The Delta's flat, fertile farmland is one of Mississippi's most famous landscapes, and for good reason: it shaped the state's whole economic history.">&#127806; Flat farmland</button>
+                <button data-response="Mississippi does have real hill country, including the Black Prairie and the North Central Hills, with their own distinct soil and history.">&#9968;&#65039; Rolling hills</button>
+                <button data-response="The Gulf Coast is part of Mississippi too, with its own sandy soil, barrier islands, and history completely different from the inland regions.">&#127958;&#65039; The coast</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE PINEY WOODS AND THE GULF COAST</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">South to the Sea</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">South of the hill country lies the Piney Woods, a broad band of sandy, well-drained soil that once supported vast forests of longleaf pine stretching across the southern part of the state. Long before the timber industry itself took off, the region's pine forests supported a naval stores industry, producing tar, pitch, and turpentine used to waterproof ships and rigging, products in steady demand throughout the age of sail. These forests, and the industries that grew around them, shaped the economy and culture of southern Mississippi in ways very different from the plantation economy that developed in the Delta and the Black Prairie.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">At the state's southern edge sits the Gulf Coast, a narrow strip of low, sandy land bordering the Gulf of Mexico, protected in places by barrier islands a few miles offshore. Islands such as Ship Island, Horn Island, and Petit Bois Island have long served as natural harbors and, at different points in the state's history, as strategic military positions controlling access to the mainland. Unlike the interior regions, the Coast's history has always been tied to shipping, fishing, and trade with other Gulf ports, a difference that goes back to the colonial period you'll read about in the coming weeks.</p>
+
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY IT &middot; EXPLORE THE MAP</div>
+            <div style="font-size: 16px; color: #0E1C42; line-height: 1.6; margin-bottom: 12px;">Click each region below for a quick summary. This is a simplified diagram, not a precise survey map, meant to show roughly where each region sits relative to the others.</div>
+            <svg viewBox="0 0 300 400" style="width: 100%; max-width: 320px; display: block; margin: 0 auto;">
+                <polygon class="map-region" data-region="delta" fill="#2196D0" points="20,20 140,20 140,180 60,220 20,180" />
+                <polygon class="map-region" data-region="hills" fill="#C7922C" points="140,20 280,20 280,220 140,180" />
+                <polygon class="map-region" data-region="piney" fill="#2A9D5C" points="60,220 140,180 280,220 280,320 60,320" />
+                <polygon class="map-region" data-region="coast" fill="#8E5AA6" points="60,320 280,320 280,370 60,370" />
+                <text x="70" y="110" fill="#fff" font-size="14">Delta</text>
+                <text x="195" y="110" fill="#fff" font-size="14">Hills</text>
+                <text x="150" y="270" fill="#fff" font-size="14">Piney Woods</text>
+                <text x="130" y="350" fill="#fff" font-size="14">Gulf Coast</text>
+            </svg>
+            <div class="map-card" data-card="delta">
+                <strong>The Delta:</strong> A flat alluvial plain built from centuries of river flooding. Some of the most fertile soil in North America.
+            </div>
+            <div class="map-card" data-card="hills">
+                <strong>The Hills:</strong> Includes the Loess Bluffs, North Central Hills, and Black Prairie, a rolling landscape with dark, chalky soil from an ancient sea.
+            </div>
+            <div class="map-card" data-card="piney">
+                <strong>The Piney Woods:</strong> Sandy soil once covered in longleaf pine forest, home to a timber-based economy distinct from the plantation regions.
+            </div>
+            <div class="map-card" data-card="coast">
+                <strong>The Gulf Coast:</strong> A narrow, low-lying strip along the Gulf of Mexico, shaped by shipping and trade since the colonial period.
+            </div>
+            <button class="widget-reset map-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; RIVERS AND CLIMATE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A State Tied Together by Water</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Beyond the Mississippi River itself, smaller rivers such as the Pearl, the Pascagoula, the Big Black, and the Yazoo drain different parts of the state and were, before railroads and highways existed, the main routes by which people and goods moved across Mississippi's interior. A community built on one of these rivers could ship cotton or timber downstream to a larger port town, and a community with no nearby river often struggled to compete economically until roads and rail finally reached it decades later. Nearly every drop of rain that falls within the state's borders eventually reaches either the Mississippi River or the Gulf of Mexico directly, a fact that ties Mississippi's regions together even where their soil and landscape differ sharply.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Mississippi's climate is humid and subtropical, with hot summers, mild winters, and among the highest average rainfall totals of any state in the country. On average, Mississippi receives more than fifty inches of rain a year, more than double what falls on many western states, and its growing season often stretches eight months or longer in the southern part of the state. That rainfall, combined with the state's rivers and generally warm growing season, made large-scale agriculture possible across most of the state, not only in the Delta's especially rich soil.</p>
+    </div>
+
+    <!-- PART 4 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 4 &middot; WHAT SETS MISSISSIPPI APART</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Low, River-Bound State</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippi's other borders are shared with Tennessee to the north, Alabama to the east, and Louisiana to the southwest, with a short stretch of coastline on the Gulf of Mexico at the state's southern edge. Only the western border, defined by the river itself, was set by nature rather than drawn as a straight line on a map.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Two features set Mississippi apart from most of its neighbors. First, the Mississippi River forms almost the entire western border of the state, a boundary drawn by geography rather than by any survey line. Second, Mississippi is remarkably low and flat compared to most states. Its highest point, Woodall Mountain in the far northeast corner, rises only about eight hundred feet above sea level, making it one of the lowest state high points in the country. Much of the rest of the state sits far lower still, and the entire state lies within a single major river system rather than spanning several different watersheds the way many larger states do.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">None of this is decoration. The river gave Mississippi its name, its western boundary, and its earliest transportation routes, long before roads or railroads reached most of the state's interior. The state's low elevation and soft, easily eroded soil made it vulnerable to the flooding and erosion you'll read about next week. Geography does not decide history by itself, but it sets the conditions people have to work within, for better and for worse.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 2.2: Counties, Seats, and the Shape of the State</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see how Mississippi's 82 counties came to divide up the land you just read about.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 2.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read an excerpt from an 1860 state-commissioned geological survey and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Geography is not just backdrop. Next week looks at how Mississippi's rivers and coastline have shaped its economy, and at the disasters, from the Great Flood of 1927 to modern hurricanes, that same geography has periodically unleashed.</p>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.1 &middot; The Shape of the Land: Mississippi's Regions and Landforms</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.map-region').forEach(function (r) { r.classList.remove('active'); });
+      w.querySelectorAll('.map-card').forEach(function (c) { c.classList.remove('show'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var region = e.target.closest('.map-region');
+    if (region) {
+      var svg = region.closest('svg');
+      svg.querySelectorAll('.map-region').forEach(function (r) { r.classList.remove('active'); });
+      region.classList.add('active');
+      var wrap = svg.closest('.optima-widget');
+      wrap.querySelectorAll('.map-card').forEach(function (c) { c.classList.remove('show'); });
+      var card = wrap.querySelector('.map-card[data-card="' + region.dataset.region + '"]');
+      if (card) card.classList.add('show');
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
