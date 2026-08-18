@@ -1,0 +1,242 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 5 - Lesson 5.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 5.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">Indigenous Nations, European Alliances, and Legacy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Trade, Treaties, and Rivalry: Indigenous Nations and European Alliances</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Indigenous Nations, European Alliances, and Legacy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Trade, Treaties, and Rivalry: Indigenous Nations and European Alliances</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">France, Britain, and Spain each wanted the same Native nations as allies, and each nation had to decide which European power, if any, actually served its own interests.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Mississippi's Native nations were not passive bystanders as European powers arrived. This lesson looks at how the Choctaw, Chickasaw, and smaller nations like the Biloxi built trade relationships and alliances with European powers, and how European rivalries sometimes fueled conflict between Native nations themselves, with consequences that could be as severe as the loss of an entire nation's independence.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace trade relationships and alliances between Mississippi's Native nations and European powers.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how European rivalries shaped relationships between Native nations.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">alliance</strong> <span style="color: #666; font-size: 14px;">(uh-LY-uhns)</span>: a formal agreement between groups to cooperate, often for mutual defense or trade.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;"><em>Biloxi</em></strong> <span style="color: #666; font-size: 14px;">(buh-LUHK-see)</span>: a small Native American nation whose homeland centered on Mississippi's Gulf Coast.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">cession</strong> <span style="color: #666; font-size: 14px;">(SESH-uhn)</span>: the formal giving up of land or rights, usually through a treaty.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">confederacy</strong> <span style="color: #666; font-size: 14px;">(kuhn-FED-er-uh-see)</span>: a group of nations or towns joined together for a common purpose while keeping some independence.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; TRADE AND ALLIANCE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Choosing Partners Carefully</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When French, British, and Spanish traders began arriving in the region in significant numbers, Mississippi's Native nations did not simply accept whichever power showed up first. Trade offered real advantages, European goods like firearms, metal tools, and cloth that were difficult or impossible to produce locally, and Native nations actively negotiated for the best terms, sometimes playing rival European powers against one another to get them.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The deerskin trade sat at the center of this exchange. Native hunters supplied enormous quantities of processed deer hides, valuable in Europe for making leather goods, in return for firearms, ammunition, cloth, metal tools, and other manufactured items. This trade reshaped hunting practices across the region, as demand for deerskins to trade sometimes exceeded what nations had hunted purely for their own use in earlier generations. It also created real economic dependence in both directions. European colonies relied on the deerskin trade for a major source of income, while Native nations increasingly relied on European manufactured goods for tools and weapons they had once made entirely themselves.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Choctaw generally leaned toward alliance with France, whose colony of Louisiana bordered much of Choctaw territory and whose traders offered goods the Choctaw wanted. The Chickasaw, by contrast, built a closer trading relationship with British colonists based in Carolina, who could offer competitive prices and steady supplies moving overland along established trading paths. Neither alliance was permanent or absolute. Both nations continued to weigh their own interests against whatever a given European power was offering at a given moment, and both maintained some level of contact with multiple European powers even while leaning toward one in particular, keeping their options open in a world where any single ally's fortunes could change quickly.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Smaller nations faced this same calculation on an even more urgent scale. The <em>Biloxi</em>, whose homeland centered on Mississippi's Gulf Coast, were among the first Native peoples to make sustained contact with French colonists arriving at the Gulf in the late 1690s. With a smaller population than the Choctaw or Chickasaw, the Biloxi had less room for error in choosing how to respond to European arrival, and their name would eventually be given to the French settlement, and later the modern city, built near their homeland, a small but lasting mark left on the map by one of the region's smaller nations.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Spain, though less directly involved in these early trading networks than France or Britain, remained a presence to the west and south, controlling territory in Texas and Florida that bordered the region and periodically competing for influence with Native nations near those borders. After 1763, when Britain gained control of West Florida following a major European war, Spain's role in the region grew more direct still, setting up a three-way competition for Native alliance that you'll see unfold further when this course reaches the colonial and Revolutionary periods.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: if you were a Native leader in the 1700s deciding whether to trade with the French or the British, what would matter most to your decision? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Access to goods mattered enormously, and different powers offered different prices, reliability, and quality depending on their own supply lines back to Europe.">&#128230; The quality and price of goods offered</button>
+                <button data-response="Location mattered too. Whichever power was geographically closest usually had an easier time maintaining a steady trade relationship.">&#128506;&#65039; Which power was closest</button>
+                <button data-response="Rivalry between the nations themselves was also a real factor. Sometimes aligning with one European power was partly about not aligning with a rival Native nation's chosen partner.">&#9876;&#65039; Rivalry with neighboring nations</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHEN RIVALRY TURNED TO CONFLICT</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Proxy Conflict in the 1700s</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Choctaw-French and Chickasaw-British alliances did not stay peacefully separate. Through much of the 1700s, periods of armed conflict broke out between the Choctaw and Chickasaw, conflicts that were shaped, and at times actively encouraged, by French and British colonial officials eager to weaken a rival power's Native ally. France supplied the Choctaw with weapons partly to pressure the Chickasaw, whose trade relationship with British Carolina threatened French colonial interests along the Mississippi River. This did not mean the Choctaw and Chickasaw had no reasons of their own to compete. It means their own conflicts became entangled with, and in some periods intensified by, a larger European rivalry that had little to do with the original causes of tension between the two nations.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Natchez experienced this same dynamic with even more severe consequences. Rising tensions with French colonists over land near the Natchez's own principal town erupted into open conflict in 1729. The French, with support from Choctaw allies, ultimately defeated the Natchez decisively, killing or enslaving much of the population and permanently scattering the survivors, some of whom found refuge among the Chickasaw and Creek. The Natchez as a politically independent nation with its own territory effectively ceased to exist after this conflict, a stark illustration of how quickly an alliance built on trade advantage could turn into a fight for a nation's very survival. It is worth returning here to a point made in Week 1: this outcome was not inevitable from the moment French colonists first settled near Natchez territory. Specific decisions, disputes over specific land, specific timing, pushed a tense relationship into open war. A different sequence of choices on either side might well have produced a different outcome entirely.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This pattern, Native nations pursuing their own interests within relationships that also served European colonial competition, appears throughout Mississippi's colonial period. It would matter enormously again during the American Revolution, when Spain, France, Britain, and the newly independent United States all sought alliances or neutrality from the same Native nations, each for reasons that had little to do with what any Native nation actually wanted for itself. The Choctaw and Chickasaw, having already survived decades of being courted, armed, and occasionally used against one another by rival colonial powers, entered this next round of competition with hard-won experience in weighing which promises from which power were actually worth trusting.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; ALLIANCE AND CONSEQUENCE</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. France generally allied with the Choctaw, while Britain built a closer relationship with the Chickasaw." data-hint="Reread the lesson's description of which European power built ties to which Native nation." >
+                <div class="widget-row-prompt">1. Which pairing of alliances does the lesson describe as most typical during the colonial period?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Spain with the Choctaw, Britain with the Natchez</button>
+                    <button data-choice="1">Britain with the Choctaw, France with the Chickasaw</button>
+                    <button data-choice="2">France with the Choctaw, Britain with the Chickasaw</button>
+                    <button data-choice="3">Spain with the Chickasaw, France with the Natchez</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0" data-fb="Right. French officials supplied the Choctaw with weapons partly to pressure the Chickasaw, entangling an existing rivalry with larger European competition." data-hint="Consider what motive a colonial power might have for supplying weapons to one Native nation over its rival.">
+                <div class="widget-row-prompt">2. Why did France supply weapons to the Choctaw during periods of Choctaw-Chickasaw conflict?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Partly to pressure the Chickasaw, whose British trade ties threatened French colonial interests</button>
+                    <button data-choice="1">Because France had no other allies anywhere in North America</button>
+                    <button data-choice="2">Because the Choctaw and Chickasaw were not actually in conflict</button>
+                    <button data-choice="3">To prevent the Choctaw from ever trading with any other European power</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 5.2: What Remains</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to look at the lasting legacy of Mississippi's First Nations, past and present.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 5.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the 1786 Treaty of Hopewell and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The alliances and rivalries you just read about set the stage for everything that follows. Next, you'll look at the lasting legacy of Mississippi's Native nations, both in the past and in the state today.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.1 &middot; Trade, Treaties, and Rivalry: Indigenous Nations and European Alliances</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
