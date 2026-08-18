@@ -1,0 +1,228 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 8 - Lesson 8.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 8.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 8</div>
+        <div style="font-size: 12px; color: #666;">English Mississippi and the Three Colonial Powers Compared</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 8.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Three Flags, Three Cultures: Comparing Spanish, French, and English Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">English Mississippi and the Three Colonial Powers Compared</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 8.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Three Flags, Three Cultures: Comparing Spanish, French, and English Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Natchez changed flags four times, French, British, Spanish, and finally American, without the town itself ever physically moving an inch.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Having studied Spanish exploration, French colonization, and British rule separately, this lesson brings all three together, comparing their goals, their methods, and what each one actually left behind in Mississippi.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate the lasting impact of Spanish, French, and English cultures on modern Mississippi.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A word from Lesson 8.1 is worth reviewing again here.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">cession</strong> <span style="color: #666; font-size: 14px;">(SESH-uhn)</span>: the formal giving up of land or rights, usually through a treaty.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THREE DIFFERENT PROJECTS</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Different Goals, Different Methods</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Spain, France, and England approached Mississippi with genuinely different priorities, and those priorities shaped everything about how each power behaved once it arrived. Spain's De Soto expedition sought quick wealth through conquest, in the pattern of Spain's earlier, spectacular successes against the Aztec and Inca Empires, and left no lasting settlement when that wealth failed to materialize. France sought a sustainable colonial economy built on trade and, eventually, enslaved agricultural labor, prioritizing a functioning colony over quick riches, though French Louisiana grew slowly and struggled financially for decades. England pursued organized settlement through land grants, actively recruiting colonists from its already-established Atlantic seaboard colonies, a strategy that built population more directly than either Spanish conquest or French trade-based colonization had.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">These priorities were not arbitrary. Each reflected the specific position and experience of the power pursuing it. Spain already possessed vast, wealthy American territories by the time De Soto arrived, and its colonial playbook, developed against the Aztec and Inca, emphasized rapid conquest of existing wealth over patient settlement. France, with a smaller American colonial presence and less prior experience in the region, built its strategy around trade relationships and a labor-intensive plantation economy instead. England, arriving latest of the three to the Mississippi region specifically, already had decades of experience running settled colonies along the Atlantic coast, and simply extended that established model westward once the opportunity arose.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">These different approaches also produced different relationships with Native nations. De Soto's expedition treated Native towns primarily as sources of food and forced labor to be extracted through threat of force. French colonial officials generally sought trade relationships and, at times, military alliances, treating Native nations as partners whose cooperation mattered to French colonial interests, even when that partnership was unequal. British settlement policy, focused on granting land to English-speaking colonists, treated Native land claims as an obstacle to be negotiated around or displaced, a pattern that would intensify dramatically once the United States inherited the same territory.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">None of this means any single European power treated Native nations well by any reasonable modern standard. Each approach still ultimately served European interests first, and each contributed, in its own way, to the pressure Native nations faced to cede land, adapt their economies to European trade, or relocate entirely. The differences described here are differences in method and immediate priority, not differences in whether Native sovereignty and land were ultimately respected.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">It is worth returning, too, to the contingency emphasized throughout this quarter. None of these three colonial projects succeeded by some predetermined destiny. De Soto's expedition could have found the wealth it sought and returned to establish a genuine Spanish colony. French Louisiana might have grown into a thriving, dominant colony rather than a struggling one, had circumstances in France or Louisiana itself gone differently. British West Florida might have remained British far longer than sixteen years, had the American Revolution and Spain's involvement in it never occurred. Mississippi's colonial history is a record of what actually happened, not a record of what had to happen.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: of the three approaches, conquest, trade, and land-grant settlement, which do you think had the most lasting effect on Mississippi? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Spanish conquest left the least direct institutional legacy in Mississippi specifically, since De Soto's expedition established no lasting government or settlement here.">&#127715;&#65039; Spanish conquest</button>
+                <button data-response="French trade and labor systems left a real legacy, especially through the Code Noir's influence on later slave codes, even though French political control did not last.">&#9878;&#65039; French trade and labor systems</button>
+                <button data-response="British land-grant settlement patterns, and the English-speaking population it brought, arguably set patterns that shaped Mississippi well into the American period that followed.">&#128196; British land-grant settlement</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT EACH POWER LEFT BEHIND</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Legacies That Outlasted Governments</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">None of the three European powers you've studied this quarter still governs Mississippi, and yet each left something behind that outlasted its own political control. Spanish exploration left few lasting institutions in Mississippi specifically, but it opened the pattern of European contact that would eventually reshape the entire region, and it briefly returned in force when Spain later governed West Florida after 1779, a period you will encounter again when this course reaches the American Revolution. French colonization left the Code Noir's legal legacy, place names, and a pattern of plantation agriculture built on enslaved labor that would only intensify under later governments. British rule left land grant patterns and an English-speaking settler population whose descendants would go on to seek American statehood for the territory.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This pattern, an institution or population outlasting the government that created it, is one you should watch for throughout the rest of this course. Mississippi's history is not a story of one government cleanly replacing another. It is a story of layers, each new government inheriting, adapting, and building on what came before, whether or not that inheritance was ever formally acknowledged.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Consider, as one final example, the region's population itself by the time of the American Revolution. French, British, and Spanish colonists, alongside enslaved Africans and their descendants, and the Choctaw, Chickasaw, and remaining Natchez, all lived within or near the same relatively small stretch of territory, each community carrying its own language, legal traditions, and religious practices forward from whichever government had brought them there. No single flag, however officially dominant on paper, ever fully erased what the flags before it had already built.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; COMPARING THREE POWERS</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Spain's De Soto expedition sought quick wealth through conquest, treating Native towns as sources of food and forced labor." data-hint="Reread the lesson's description of what motivated the Spanish expedition specifically.">
+                <div class="widget-row-prompt">1. Which colonial power's approach was most focused on quick conquest and wealth, in the pattern of earlier Spanish victories elsewhere?</div>
+                <div class="widget-options">
+                    <button data-choice="0">France</button>
+                    <button data-choice="1">Spain</button>
+                    <button data-choice="2">England</button>
+                    <button data-choice="3">All three equally</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. Each power left something, legal codes, place names, settlement patterns, that outlasted its actual political control of the territory." data-hint="Consider the lesson's larger point about legacies outlasting governments.">
+                <div class="widget-row-prompt">2. What pattern does this lesson ask you to watch for throughout the rest of the course?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Each government completely erasing the one before it</button>
+                    <button data-choice="1">Only one European power ever having any lasting influence</button>
+                    <button data-choice="2">Native nations disappearing entirely after each transition</button>
+                    <button data-choice="3">Institutions and populations outlasting the governments that created them</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 8.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about Spanish-period records of the Natchez District and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Quarter 1 concludes next week with a review of everything from contact to colonial Mississippi. Quarter 2 will pick up the story with Mississippi's own path toward statehood.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 8.2 &middot; Three Flags, Three Cultures: Comparing Spanish, French, and English Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
