@@ -1,0 +1,232 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 6 - Lesson 6.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 6.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Spanish Exploration: De Soto in Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Contact and Consequence: What De Soto Left Behind</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Spanish Exploration: De Soto in Mississippi</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Contact and Consequence: What De Soto Left Behind</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In the dead of winter, the Chickasaw launched a surprise attack that nearly destroyed De Soto's expedition entirely.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This lesson looks at what happened when relations between De Soto's expedition and the Chickasaw broke down, and at the larger, longer-lasting consequences of Spanish contact for Mississippi's Native nations.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what caused the Chickasaw attack on De Soto's expedition and its immediate consequences.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate the broader consequences of Spanish exploration for Mississippi's Native nations.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words from Lesson 6.1 are worth reviewing again here.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">conquistador</strong> <span style="color: #666; font-size: 14px;">(kon-KEES-tuh-dor)</span>: a Spanish or Portuguese soldier and adventurer who took part in conquering land in the Americas during the 1500s and 1600s.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">expedition</strong> <span style="color: #666; font-size: 14px;">(ek-spuh-DISH-uhn)</span>: a journey made by a group of people for a specific purpose, such as exploring unfamiliar land.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE ATTACK AT CHICAZA</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Winter Camp Turns Deadly</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In the winter of 1540 to 1541, De Soto's expedition set up camp near a Chickasaw town, recorded by the expedition's chronicler as "Chicaza." At first, relations between the Spanish and the Chickasaw were tense but not openly hostile. That changed when De Soto demanded that Chickasaw men be provided as porters to carry supplies for the expedition's continued journey, a demand that struck at the Chickasaw's independence and dignity as much as their labor, and one made from a position of visible weakness, since De Soto's expedition was already reduced and running low on supplies by the time it reached Chickasaw territory.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Chickasaw responded with a surprise night attack, setting fire to the Spanish camp and killing a number of soldiers in the chaos and confusion of the fighting and the flames. The attack destroyed much of the expedition's remaining equipment and killed a significant number of its horses, animals that were nearly irreplaceable so far from any Spanish resupply. De Soto's men had to rebuild weapons, clothing, and equipment from whatever materials they could find or make before the expedition could continue moving at all.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The attack came remarkably close to ending the expedition entirely. With so many horses lost and so much equipment destroyed, De Soto's remaining force was in no condition to continue fighting or even to defend itself effectively if the Chickasaw had attacked again immediately. That a second, potentially finishing attack did not come gave the Spanish just enough time to recover, rebuild what they could, and move on, a narrow margin between the expedition's survival and its complete destruction. Historians studying the episode note that a more coordinated follow-up attack by the Chickasaw might well have ended the expedition then and there, more than a year before it ever reached the Mississippi River itself.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: does a demand for forced labor seem like a small provocation or a serious one to you? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="From the Chickasaw's perspective, being ordered to serve an occupying army as porters was almost certainly experienced as a serious violation of their independence, not a minor inconvenience.">&#9888;&#65039; A serious provocation</button>
+                <button data-response="It's worth reconsidering how a demand that might sound small in a single sentence could actually represent a major imposition on a people's freedom and dignity.">&#129300; I hadn't thought it was that serious</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A LEGACY WRITTEN IN DISEASE, NOT CONQUEST</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">What De Soto Actually Left Behind</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After leaving Chicaza, De Soto's battered expedition pressed onward and, in the spring of 1541, became the first documented Europeans to see the Mississippi River, somewhere in the vicinity of what is now the Mississippi Delta. Crossing a river of that size with no boats of their own required weeks of work building rafts, all while remaining vigilant against local resistance. The expedition continued west into what is now Arkansas and Louisiana still searching for wealth it never found, before eventually turning back toward the river that would, centuries later, give the state of Mississippi its name.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">De Soto never found the wealthy empire he was searching for. He died in 1542, likely of fever, along the Mississippi River somewhat farther west of where the state that bears the river's name would eventually be. His men, reportedly worried that local Native peoples who had been told the Spanish were immortal beings might turn against them if they learned of De Soto's death, buried his body secretly in the river itself rather than in the ground, a fittingly hidden end for a leader whose entire venture had produced far less than the fortune and fame he had set out to find. His surviving men, reduced and exhausted, eventually built crude boats and escaped down the river to the Gulf of Mexico rather than continuing the search. No lasting Spanish settlement, government, or colony in Mississippi resulted directly from the expedition.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">And yet, as you learned in Week 1, the expedition's most significant legacy may not have been anything it did on purpose. Wherever De Soto's expedition passed through Native towns, it likely left behind European diseases these communities had no immunity to. Some archaeologists and historians believe the population decline this contact triggered may have been severe enough to explain why some Mississippian mound centers you read about in Week 4 appear to have been abandoned or significantly reduced in population within a few generations of European contact, well before large-scale European settlement ever reached the region.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This is exactly the kind of consequence the Historiography guidance from Week 1 warns against oversimplifying. Nobody in De Soto's expedition understood how disease spread, and no one intended to inflict a demographic catastrophe on the nations they encountered. Understanding this consequence as unintended, rather than as a deliberate plan, does not make it any less real or any less severe. It changes what kind of historical explanation actually fits the evidence.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">It is also worth noticing what did not happen. De Soto's expedition, for all the damage it caused, did not result in permanent Spanish control of Mississippi, a lasting colonial government, or a Spanish population that remained after the expedition moved on. More than a century would pass before any European power returned to the region with a serious, sustained intention to settle it permanently. Whatever changes De Soto's expedition set in motion, deliberate colonization was not among them, at least not yet. When European powers did return with the intention to settle rather than simply pass through, they would arrive to find a landscape already reshaped by an expedition most Native nations by then remembered only through inherited story, not living memory.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CAUSE AND CONSEQUENCE</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. De Soto demanded that Chickasaw men serve as porters, a demand experienced as a serious violation of Chickasaw independence." data-hint="Reread the lesson's explanation of what specifically triggered the Chickasaw attack.">
+                <div class="widget-row-prompt">1. What specifically triggered the Chickasaw attack on De Soto's camp?</div>
+                <div class="widget-options">
+                    <button data-choice="0">The Spanish refused to trade with the Chickasaw at all</button>
+                    <button data-choice="1">De Soto announced he was leaving the region permanently</button>
+                    <button data-choice="2">De Soto demanded Chickasaw men serve as forced porters</button>
+                    <button data-choice="3">The Chickasaw wanted to convert the Spanish to their religion</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0" data-fb="Right. The spread of disease, not deliberate conquest, was likely the expedition's most significant, if unintentional, lasting consequence." data-hint="Consider what the lesson identified as the expedition's most significant impact, even though nobody involved intended it.">
+                <div class="widget-row-prompt">2. What was likely De Soto's expedition's most significant lasting consequence for Mississippi's Native nations?</div>
+                <div class="widget-options">
+                    <button data-choice="0">The unintentional spread of European diseases</button>
+                    <button data-choice="1">A permanent Spanish colonial government</button>
+                    <button data-choice="2">A lasting military alliance with the Chickasaw</button>
+                    <button data-choice="3">The introduction of Spanish as the region's main language</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 6.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about the Chicaza attack and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">After De Soto's expedition retreated in failure, more than a century passed before another European power made a serious, lasting attempt to claim Mississippi. Next week looks at French Louisiana, and the very different kind of colonization that followed.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.2 &middot; Contact and Consequence: What De Soto Left Behind</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 6 - Lesson 6.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 6.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Spanish Exploration: De Soto in Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Hernando de Soto's Expedition Enters Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Spanish Exploration: De Soto in Mississippi</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Hernando de Soto's Expedition Enters Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A Spanish army of six hundred men marched into what is now Mississippi more than eighty years before the first English colonists reached Jamestown.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Hernando de Soto's expedition was the first sustained European presence on the land that would become Mississippi. This lesson traces how his army got there, what it was looking for, and what its arrival meant for the Native nations already living on that land, more than a century before any European power attempted permanent settlement in the region.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the motivations and route of Hernando de Soto's expedition into Mississippi.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> compare and contrast Spanish exploration with the other European powers Mississippi would later encounter.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">conquistador</strong> <span style="color: #666; font-size: 14px;">(kon-KEES-tuh-dor)</span>: a Spanish or Portuguese soldier and adventurer who took part in conquering land in the Americas during the 1500s and 1600s.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">expedition</strong> <span style="color: #666; font-size: 14px;">(ek-spuh-DISH-uhn)</span>: a journey made by a group of people for a specific purpose, such as exploring unfamiliar land.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A CONQUISTADOR'S AMBITION</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Why de Soto Came</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Hernando de Soto had already made a fortune helping conquer the Inca Empire in Peru, and he returned to Spain wealthy and ambitious for a command of his own. In 1537, the Spanish crown granted him the right to explore and conquer "La Florida," a vague Spanish term that at the time referred to nearly the entire southeastern portion of North America, far larger than the modern state of Florida, and a territory whose actual size and geography the Spanish crown itself barely understood when it issued the grant. De Soto financed and organized an expedition of roughly six hundred men, along with horses, war dogs, and pigs intended as a mobile food supply, and departed Spain in 1538, stopping first in Cuba, where he served briefly as governor, before launching the mainland expedition itself the following year with the bulk of his men, horses, and supplies intact.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The pigs mattered more than they might seem to at first. Unlike horses or dogs, pigs could forage for much of their own food and reproduce quickly, giving the expedition a self-renewing meat supply that did not depend entirely on what could be taken or traded from Native towns along the way. By the time the expedition reached Mississippi, the herd had grown substantially from its original size, a detail that later became important when the herd itself became a target during a conflict you'll read about in the next lesson, and a reminder that even a well-planned expedition's fortunes could turn on something as ordinary as its food supply.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">De Soto's motivations were straightforward by the standards of Spanish conquest at the time: he hoped to find another wealthy empire like the Inca or Aztec, rich in gold and silver, and to conquer it for personal fortune and royal favor. After landing in Florida in 1539, his expedition spent nearly a year moving north and west through what is now Georgia, South Carolina, and Alabama, fighting, negotiating, and demanding food and porters from Native towns along the way, before finally crossing into the region that is now Mississippi in late 1540.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This long overland route mattered. By the time De Soto's expedition reached Mississippi, it had already fought a major, costly battle against a Native confederacy in Alabama, at a fortified town called Mabila, that killed a significant number of Spanish soldiers and destroyed much of the expedition's remaining supplies and equipment. The expedition that entered Mississippi in late 1540, in other words, was not the same well-equipped force that had landed in Florida the year before. It was smaller, more depleted, and more desperate to find the wealth that had justified the entire venture in the first place, a desperation that would shape its behavior toward the Native nations it still had to pass through.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: what do you think an expedition of six hundred armed men, traveling through unfamiliar territory, would need most to survive month after month? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Food was a constant, urgent need, and much of it had to come from the towns the expedition passed through, whether given willingly or taken by force.">&#127806; A steady food supply</button>
+                <button data-response="Guides and interpreters mattered enormously. De Soto relied heavily on captured or coerced Native guides to navigate unfamiliar territory.">&#128506;&#65039; Local knowledge and guides</button>
+                <button data-response="Discipline and morale were real challenges too, especially as the expedition went months without finding the wealth it was searching for.">&#9876;&#65039; Discipline among his own men</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A DIFFERENT KIND OF EUROPEAN ARRIVAL</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Exploration, Not Settlement</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">De Soto's expedition looked very different from the French, English, and later American settlement Mississippi would experience in later centuries, and it is worth being precise about that difference now, since you'll be comparing all three European powers directly in the coming weeks. De Soto's men built no permanent towns, established no lasting government, and left behind no colony. They moved constantly, staying only as long as a location could feed them, then moving on in search of wealth that never materialized.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Contact with Native nations along the route also looked different from later colonial patterns. De Soto's expedition typically arrived at a town, demanded food, shelter, and often porters or guides, and used force or the threat of it when a town's leaders resisted. This was closer to a military occupation passing through than to trade or settlement. Some encounters were peaceful, particularly with towns willing to comply quickly, but many were not, and the expedition left a trail of damaged relationships with Native nations across the entire Southeast, not only in Mississippi.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">De Soto's men also relied heavily throughout the journey on captured Native interpreters and guides, some traveling with the expedition for years, often against their will. One interpreter, a Spanish castaway named Juan Ortiz who had been living among a Florida nation for over a decade before De Soto's arrival, proved invaluable to the expedition's ability to communicate at all in its early stages. Without interpreters like Ortiz, the entire expedition's ability to negotiate, or even to understand basic warnings, would have been far more limited than it already was, especially once the expedition moved beyond the range of any language its interpreters already knew.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This made De Soto's presence in Mississippi brief by later colonial standards, likely less than a year in total, but it does not mean the expedition left no impact. His forces demanded and often took food, supplies, and forced labor from Native towns already struggling to support their own populations. Perhaps more consequentially, and unintentionally, the expedition likely introduced European diseases into Native communities that had no prior exposure or immunity to them, setting off the same kind of catastrophic population decline described earlier this quarter, though on a more localized and immediate scale wherever the expedition actually passed.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; EXPLORATION VS. SETTLEMENT</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. De Soto's expedition built no permanent towns and established no lasting government, unlike the colonies that followed later." data-hint="Reread the lesson's comparison between De Soto's expedition and later colonial settlement.">
+                <div class="widget-row-prompt">1. What made De Soto's expedition different from the later French, English, and American settlement of Mississippi?</div>
+                <div class="widget-options">
+                    <button data-choice="0">De Soto's expedition included no soldiers</button>
+                    <button data-choice="1">De Soto's expedition built no permanent towns or lasting government</button>
+                    <button data-choice="2">De Soto's expedition never made contact with any Native nation</button>
+                    <button data-choice="3">De Soto's expedition lasted more than a century</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 6.2: Contact and Consequence</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see what happened when tensions between De Soto's expedition and the Chickasaw boiled over.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 6.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read an excerpt from the Gentleman of Elvas's narrative and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">De Soto's expedition never returned to Spain with the wealth it sought, and De Soto himself died along the way, without founding any lasting Spanish presence in Mississippi. Next, you'll see what happened when his expedition's welcome wore out entirely.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.1 &middot; Hernando de Soto's Expedition Enters Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
