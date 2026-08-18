@@ -1,0 +1,239 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 7 - Lesson 7.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 7.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 7</div>
+        <div style="font-size: 12px; color: #666;">French Louisiana and the Mississippi Territory</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">France Claims the Mississippi: La Salle, Iberville, and the Founding of Louisiana</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">French Louisiana and the Mississippi Territory</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">France Claims the Mississippi: La Salle, Iberville, and the Founding of Louisiana</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">One French explorer claimed the entire Mississippi River valley for France by standing at its mouth and giving a speech. Actually founding a colony there took seventeen more years and a very different kind of expedition.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">More than a century after De Soto's expedition passed through and left, France became the first European power to establish a lasting presence in the Mississippi region. This lesson traces the difference between claiming land and actually settling it, and looks at how French Louisiana got its start, and why it took two separate expeditions, decades apart, before that start actually held.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish between France's claim to Louisiana and its actual settlement of the territory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> compare the first French settlement in Mississippi with the earlier Spanish expedition.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">colony</strong> <span style="color: #666; font-size: 14px;">(KAHL-uh-nee)</span>: a settlement controlled by, and dependent on, a distant home country.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">missionary</strong> <span style="color: #666; font-size: 14px;">(MISH-uh-ner-ee)</span>: a person sent to spread a religion, often to a new or distant place.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A CLAIM WITHOUT A COLONY</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">La Salle's Ceremony</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1682, the French explorer Ren&eacute;-Robert Cavelier, Sieur de La Salle, traveled down the Mississippi River from the Great Lakes region all the way to its mouth at the Gulf of Mexico. When he arrived, he held a formal ceremony claiming the entire river valley, an enormous territory stretching from the Appalachian Mountains to the Rocky Mountains, for France. He named the territory Louisiana, in honor of King Louis XIV. La Salle had already spent years building relationships with Native nations and French fur traders across the Great Lakes region before undertaking this journey, and he saw control of the entire Mississippi River system as a way to link France's northern colony of New France with a new southern outlet directly onto the Gulf of Mexico, bypassing the English colonies that blocked easier access to the Atlantic. On paper, this single ceremony gave France a claim to a larger territory than the entire kingdom of France itself, a striking imbalance between the scale of the claim and the reality of French power actually present on the ground to enforce it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A ceremony, however, is not a colony. La Salle's claim gave France a legal argument against rival European powers, but it did not put a single French settler, soldier, or trading post anywhere in the territory he had just claimed. La Salle himself tried and failed to establish a settlement near the mouth of the Mississippi a few years later, missing the river's actual mouth by hundreds of miles and eventually dying at the hands of his own mutinous men in what is now Texas. France's claim to Louisiana would sit unrealized for nearly two decades after La Salle's ceremony.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This gap between claim and reality was not unique to France. European powers of this era routinely asserted formal claims over territory they had barely explored, let alone settled, often based on nothing more than a single expedition's arrival at a river, coastline, or landmark. These claims mattered enormously in negotiations and treaties between European capitals, where a documented ceremony could carry real legal weight, even though the claim itself changed nothing about who actually controlled the land day to day, or about the Native nations who had lived there for centuries and had never been consulted about any of it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Understanding this gap between paper claims and actual power is essential to reading the rest of Mississippi's colonial history correctly. A map showing which European power supposedly "controlled" a given territory in a given year can be misleading if it is read as describing who actually governed the people living there day to day, rather than describing a claim European diplomats recognized mainly in their dealings with one another.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: does a formal ceremony claiming land actually give a country control over that land? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="You're right to be skeptical. A claim mattered mainly in disputes between European powers. It did almost nothing to establish actual control on the ground, especially without settlers, soldiers, or forts.">&#129300; Not really, no</button>
+                <button data-response="It's worth pushing further on this. As you'll see in this lesson, France's claim and France's actual presence in the Mississippi Valley were two very different things, separated by almost twenty years.">&#128220; I think so, yes</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; IBERVILLE MAKES IT REAL</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The First Lasting French Settlement</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1698, Pierre Le Moyne d'Iberville, a French naval officer, was ordered to find the mouth of the Mississippi River from the Gulf side and establish an actual French settlement there before England or Spain could do the same. Unlike La Salle's ceremony, Iberville's expedition arrived with settlers, soldiers, and supplies intended to stay. In 1699, Iberville's expedition built Fort Maurepas near modern Biloxi, the first permanent French settlement in the region and the true beginning of French Louisiana as an actual colony rather than a claim on paper.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Iberville chose the Gulf Coast site partly for practical reasons and partly because of the competition he was racing against. English colonists from Carolina were already trading, and occasionally exploring, along the Gulf, and Spain maintained its own settlements not far to the east in Florida. Establishing an actual French presence, not just a claim, was the only way to make France's position in the region meaningful against these rival powers, both of which had far more established colonies elsewhere in North America already.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Growth from this small beginning was slow. Fort Maurepas itself struggled in its early years, hampered by unfamiliar soil, disease, and a location not especially well suited to large-scale farming. French colonial leadership relocated the colony's main settlement more than once in its first two decades, first toward Mobile and eventually toward the site that would become New Orleans, each move a practical response to the difficulty of actually sustaining a colony on unfamiliar ground, not a sign of any grand, pre-planned strategy. Colonial planning from a European capital, however carefully drawn on paper, routinely gave way to the messier realities colonists actually encountered once they arrived.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">In 1718, nearly two decades after Fort Maurepas, France sent a much larger group of about eight hundred settlers, some of whom founded New Orleans while others established settlements near the Natchez, the nation you studied earlier this quarter. Unlike De Soto's expedition, which passed through and left, French colonization meant permanent towns, ongoing government, and a colonial economy that would shape the region for decades, built on land the Natchez, Choctaw, Chickasaw, and Biloxi had lived on for centuries before any Frenchman arrived.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CLAIM VS. SETTLEMENT</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="3" data-fb="Right. La Salle's 1682 ceremony was a legal claim with no settlers, soldiers, or forts actually established on the ground." data-hint="Reread the lesson's description of what La Salle's ceremony actually accomplished, and what it did not." >
+                <div class="widget-row-prompt">1. What did La Salle's 1682 ceremony actually accomplish?</div>
+                <div class="widget-options">
+                    <button data-choice="0">It established a permanent French fort at the river's mouth</button>
+                    <button data-choice="1">It ended Spanish claims to the region entirely</button>
+                    <button data-choice="2">It brought the first eight hundred French settlers to Louisiana</button>
+                    <button data-choice="3">It gave France a legal claim to the territory with no settlers on the ground</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Iberville's 1699 expedition to build Fort Maurepas near modern Biloxi was the first lasting French settlement in the region." data-hint="Consider which expedition actually resulted in a permanent settlement, not just a claim.">
+                <div class="widget-row-prompt">2. What made Iberville's 1699 expedition different from La Salle's 1682 claim?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Iberville traveled the entire length of the Mississippi River</button>
+                    <button data-choice="1">Iberville's expedition established a real, lasting settlement</button>
+                    <button data-choice="2">Iberville named the territory Louisiana</button>
+                    <button data-choice="3">Iberville never actually reached the Gulf Coast</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 7.2: Law, Labor, and the Code Noir</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see how France governed labor and enslaved people in its new colony.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 7.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read an eyewitness account of Iberville's founding of Louisiana and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Founding a colony was only the beginning. Next, you'll look at how France structured labor and law in its new territory, including a legal code that would shape life in Mississippi for generations.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.1 &middot; France Claims the Mississippi: La Salle, Iberville, and the Founding of Louisiana</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 7 - Lesson 7.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 7.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 7</div>
+        <div style="font-size: 12px; color: #666;">French Louisiana and the Mississippi Territory</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Law, Labor, and the <em>Code Noir</em> in French Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">French Louisiana and the Mississippi Territory</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Law, Labor, and the <em>Code Noir</em> in French Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In 1724, France issued a single legal code to govern nearly every aspect of enslaved people's lives in its new colony, a code that would shape Mississippi's laws and society for decades after France itself was gone.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">French Louisiana's colonial economy depended heavily on enslaved labor from its earliest years. This lesson looks at how that labor system was organized, and at the <em>Code Noir</em>, the legal code France used to regulate it, a document whose influence would outlast French control of Mississippi by generations.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the role of enslaved labor in French Louisiana's colonial economy.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> assess the results of the <em>Code Noir</em> on the cultural development of French Mississippi.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A word from Lesson 7.1, plus a new foreign-language term, are worth reviewing here.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">colony</strong> <span style="color: #666; font-size: 14px;">(KAHL-uh-nee)</span>: a settlement controlled by, and dependent on, a distant home country.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;"><em>Code Noir</em></strong> <span style="color: #666; font-size: 14px;">(kohd nwahr)</span>: French for "Black Code," a set of laws issued by France in 1685 and adapted for Louisiana in 1724 to regulate slavery and the lives of enslaved and free Black people in French colonies.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; LABOR IN A YOUNG COLONY</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Building an Economy from Nothing</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">French Louisiana faced an immediate, practical problem in its earliest years: clearing land, building structures, and growing crops all required enormous amounts of labor, and the colony had far too few French settlers to supply it. France initially relied partly on French indentured laborers, who worked for a fixed period in exchange for passage to the colony, but this source proved insufficient and unreliable, since indentured workers eventually finished their terms and few new laborers volunteered to cross the Atlantic for a struggling, disease-prone colony with an uncertain future and no guarantee of the prosperity recruiters back in France sometimes promised.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Starting in the 1710s, France began importing enslaved Africans directly to Louisiana in significant numbers, a labor system French colonial officials saw as the practical foundation for the colony's economic survival. The Company of the Indies, a French trading company granted a monopoly over Louisiana's commerce for a period in the 1710s and 1720s, organized much of this forced migration directly, treating enslaved human beings as cargo alongside the other goods it shipped and traded as part of its colonial business. Ships carrying enslaved Africans to Louisiana crossed the Atlantic under brutal conditions, and a significant number of captives did not survive the journey at all, a human cost the company's own trading records generally reduced to numbers and cargo losses rather than acknowledged as the deaths of individual people.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This decision had consequences that would outlast French rule in Mississippi by well over a century. The enslaved population, and the plantation-based economy built around their forced labor, expanded steadily through the following decades of French, then British, then Spanish, then American control. The system of slavery you will study in far more detail in Quarter 2 had its origins here, in decisions French colonial administrators made in the first decades of the 1700s to solve an immediate labor shortage, decades before Mississippi existed as a British, Spanish, or American territory at all. Later chapters of this course will trace how this same basic labor system persisted, and in many ways intensified, through each subsequent change of colonial and eventually state government, right up through the antebellum period you will study in the second half of this quarter.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you read on: does it surprise you that a decision made by French officials in the early 1700s would still be shaping Mississippi more than a century later, under completely different governments? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="This is a pattern worth watching for throughout the rest of this course: early decisions, made under one government, can outlast that government entirely and keep shaping a place for generations.">&#8987; Yes, that's a striking thought</button>
+                <button data-response="You may already have a good intuition for how institutions, once established, tend to persist even as the governments that created them change. Keep that intuition close as this course continues.">&#128161; Not really, that makes sense to me</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A CODE THAT GOVERNED EVERY DAY LIFE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The <em>Code Noir</em> of 1724</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1724, France issued a version of its <em>Code Noir</em>, or "Black Code," specifically adapted for Louisiana, based closely on an earlier version France had issued for its Caribbean colonies decades before. The code regulated an enormous range of daily life: it required enslaved people to be instructed in the Catholic faith and baptized, it restricted marriage and gatherings, it set out punishments for a wide range of offenses, and it also, on paper, limited some of the treatment enslavers could legally inflict, though enforcement of those limits was inconsistent at best and depended entirely on local officials who often had every incentive to look away.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The code additionally banned Jewish residents from the colony entirely, a provision with no connection to slavery but a clear reflection of the code's broader purpose: using law to enforce a specific religious and social order the French crown wanted imposed on its colony. Reading the <em>Code Noir</em> as a single document, rather than as a specifically racial law alone, helps explain why: French colonial law in this period treated religious conformity, social order, and the regulation of enslaved labor as connected parts of the same project of building a controlled, orderly colonial society, all administered from a very great distance by a crown that had never seen the colony itself.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The <em>Code Noir</em>'s influence did not end when French control of the region did. Spanish and later American authorities in the region drew on many of its underlying assumptions when writing their own slave codes, even after the specific French legal document itself no longer applied. Understanding the <em>Code Noir</em> is not just understanding an isolated French law. It is understanding the legal foundation that later slave codes in Mississippi, including the one you will examine directly in Quarter 2, were built upon.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This kind of legal continuity across changes in colonial rulers was not unusual. Governments that took over a colony from a previous power often found it easier to keep existing legal structures largely in place, adjusting them gradually, than to design an entirely new legal system from scratch. This meant that the specific choices French administrators made in 1724, choices shaped by France's own particular legal traditions and religious priorities at that moment, continued shaping daily life in Mississippi long after those administrators, and the government they served, had left the region entirely.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; UNDERSTANDING THE CODE NOIR</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. France began importing enslaved Africans directly to Louisiana starting in the 1710s to solve a persistent, severe labor shortage." data-hint="Reread the lesson's explanation of why France turned to enslaved labor in the first place.">
+                <div class="widget-row-prompt">1. Why did France turn to enslaved African labor in Louisiana?</div>
+                <div class="widget-options">
+                    <button data-choice="0">French indentured servants had proven more expensive than enslaved labor</button>
+                    <button data-choice="1">The Choctaw and Chickasaw requested it directly</button>
+                    <button data-choice="2">French settlers alone could not meet the colony's severe labor needs</button>
+                    <button data-choice="3">Spain required it as a condition of recognizing French claims</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. The Code Noir's underlying assumptions influenced Spanish and later American slave codes even after French control of the region ended." data-hint="Reread the lesson's explanation of the Code Noir's influence after French rule ended.">
+                <div class="widget-row-prompt">2. Why does the lesson describe the Code Noir as more than just an isolated French law?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Because it was the only law France ever wrote for Louisiana</button>
+                    <button data-choice="1">Because it was translated into every Native language in the region</button>
+                    <button data-choice="2">Because it remained the official law of Mississippi until the Civil War</button>
+                    <button data-choice="3">Because its underlying assumptions shaped later slave codes even after French rule ended</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 7.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read an excerpt from the actual <em>Code Noir</em> of 1724 and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">France was not the only European power interested in Mississippi. Next week, you'll see what happened when England took control of the region, and compare all three colonial powers, Spanish, French, and English, directly.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.2 &middot; Law, Labor, and the Code Noir in French Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
