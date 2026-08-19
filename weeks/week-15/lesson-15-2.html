@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 15 - Lesson 15.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 15.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 15</div>
+        <div style="font-size: 12px; color: #666;">The Rise of the Plantation Economy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 15.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Planter's Ledger: Labor, Land, and Profit</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Rise of the Plantation Economy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 15.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Planter's Ledger: Labor, Land, and Profit</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Only a small fraction of Mississippi's white families owned enough enslaved people to be called planters at all, yet that small fraction controlled most of the state's land, labor, and wealth.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Lesson 15.1 described the forces that built Mississippi's cotton economy. This lesson looks at how that economy actually functioned day to day, through the specific documents planters kept to track their land, their crops, and the enslaved people whose labor produced their wealth, and asks what those records reveal about who this economy genuinely served.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how plantation ownership and enslaved labor were actually distributed across Mississippi's antebellum population.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate whether Mississippi's cotton economy solved the first-order economic problem of general prosperity.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">These words carried over from Lesson 15.1 are still worth reviewing.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">plantation</strong> <span style="color: #666; font-size: 14px;">(plan-TAY-shuhn)</span>: a large agricultural estate, in Mississippi's case typically growing cotton, worked by enslaved laborers under the direction of an owner or overseer.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">cash crop</strong> <span style="color: #666; font-size: 14px;">(KASH krop)</span>: a crop grown specifically to sell for profit rather than for a farmer's own household use.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHO ACTUALLY OWNED MISSISSIPPI'S WEALTH</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Steep Pyramid, Not a Broad Middle Class</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Antebellum Mississippi's white population was itself sharply divided by wealth, in ways the term "planter" often obscures. A genuine planter, by the common historical definition, owned twenty or more enslaved people; by that measure, planters made up only a small minority of Mississippi's white households, even though they controlled a hugely disproportionate share of the state's best land and enslaved labor. Most white Mississippians were yeoman farmers who owned no enslaved people at all, or a handful at most, working smaller farms on less desirable land, often in the hill country away from the richest cotton soil.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This week's Primary Source 15.1 is a real planter's own diary, kept by Everard Green Baker, who owned plantations in Jefferson, Panola, and Hinds Counties between 1848 and 1876. Diaries and ledgers like Baker's typically recorded exactly the kind of detail that made a plantation function as a business: crop yields, weather, purchases and debts, correspondence with the cotton factors and merchants who financed and sold a planter's crop, and direct records of the enslaved people whose labor the entire operation depended on entirely.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A document like this is valuable precisely because it shows the ordinary, day-to-day mechanics behind the large historical forces Lesson 15.1 described. Behind the abstract statistics about cotton exports and land prices sat actual people making actual decisions, an owner's daily entries about weather and yields, sitting on the same page as entries about the enslaved people forced to produce them, a juxtaposition that is itself part of what this kind of source reveals honestly.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Larger plantations often employed a hired overseer to manage the daily details of enslaved labor directly, freeing the owner for the financial and social side of running an estate, correspondence with cotton factors in Natchez or New Orleans who advanced credit against an unharvested crop and then sold that crop once picked, keeping a share of the proceeds for themselves. This credit system tied planters, banks, and factors together in a single financial chain, one where a bad cotton price in a given year could ripple through debts owed at every link, from the largest planter down to the local merchants who depended on planter business to survive.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Labor on a cotton plantation was typically organized under what historians call the gang system, enslaved workers grouped together and moved through a field in a coordinated line, each person expected to keep pace with the group under an overseer's direct supervision, a method designed to maximize the amount of cotton picked each day rather than to accommodate any individual worker's own pace or wellbeing. Ledgers like Baker's frequently recorded yields per hand, a phrase itself worth pausing on, since it reduces a human being's labor to a unit of agricultural output, exactly the kind of language a plantation's own records normalized without comment.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Why might a planter's own diary, written for no audience but himself, be a genuinely valuable historical source, even though it reflects only the owner's perspective and not the perspective of the enslaved people it describes? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="A source written with no audience in mind often reveals things its author never intended to prove or argue, simply because he was not performing for anyone. That unguarded quality is valuable, even though it captures only one perspective.">&#128221; It's honest precisely because it wasn't written to persuade anyone</button>
+                <button data-response="That is a fair concern to hold onto. A one-sided source still needs to be read critically, alongside other kinds of evidence, including the WPA slave narratives you will read directly in Week 16, which recover perspectives a planter's diary alone cannot.">&#9878;&#65039; It still only tells one side of the story</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; DID THIS ECONOMY SOLVE ITS FIRST-ORDER PROBLEM?</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Prosperity for Whom?</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This course has repeatedly asked whether a given economic or political system solves the first-order problem of producing and distributing enough for general prosperity across the whole population it governs, not merely for its most powerful members. Mississippi's cotton economy, judged honestly by that standard, is not a close call. It generated enormous wealth, but that wealth flowed overwhelmingly to a small planter class, while the enslaved majority who actually grew and picked the cotton received none of it, held no property of their own by law, and had no legal standing to claim any share of what their forced labor produced.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Even judged only by the free, white population's own prosperity, the picture is uneven rather than uniformly successful. Yeoman farmers without significant enslaved labor of their own often struggled to compete with large plantations for the best land and access to credit, and many found their own economic mobility narrowing precisely as planter wealth expanded around them. A cotton economy this concentrated in a small class's hands is a genuinely limited answer to the first-order problem of general prosperity, even before accounting for the enslaved population it depended on and excluded from that prosperity entirely.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A defender of this system at the time might have pointed to its real, undeniable productivity, Mississippi genuinely did produce enormous quantities of cotton feeding textile mills as far away as Britain, and argued that productivity itself was evidence of a well-functioning economy. That argument mistakes total output for general prosperity, exactly the distinction this course's Classical Republican standard insists on holding apart. A system can be extraordinarily productive in the aggregate while still failing the great majority of the people whose labor makes that productivity possible, and judging an economy only by its total wealth, without asking who actually held that wealth, is precisely the kind of incomplete evaluation this course asks you to avoid.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">None of this erases the real industry, planning, and enterprise this week's virtue names, real work went into building this economy, by planters, by yeoman farmers, and, most of all, by the enslaved people whose forced labor made it possible. But industry alone does not make an economic system just, and a system's productivity is not the same question as whether it distributes what it produces fairly. Holding both truths, real economic achievement and a deeply unjust distribution of its rewards, is exactly the discipline this course asks of you as it turns, starting next week, to the people this economy was built on top of.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; THE PLANTER'S LEDGER</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. Genuine planters, owning twenty or more enslaved people, were a small minority of white households, even though they controlled a hugely disproportionate share of land and enslaved labor." data-hint="Reread the lesson's explanation of how common genuine planter status actually was among Mississippi's white population.">
+                <div class="widget-row-prompt">1. What does this lesson reveal about how common "planter" status actually was among Mississippi's white population?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Most white Mississippians owned twenty or more enslaved people</button>
+                    <button data-choice="1">Land ownership was distributed evenly across all white households</button>
+                    <button data-choice="2">Genuine planters were a small minority who controlled a hugely disproportionate share of land and labor</button>
+                    <button data-choice="3">No white Mississippians owned enslaved people at all</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. Judged by whether it distributed prosperity across the whole population, Mississippi's cotton economy was a genuinely limited success, generating enormous wealth concentrated in a small planter class while excluding the enslaved majority entirely." data-hint="Reread the lesson's evaluation of whether Mississippi's cotton economy solved the first-order problem of general prosperity.">
+                <div class="widget-row-prompt">2. How does this lesson evaluate Mississippi's cotton economy against the standard of general prosperity?</div>
+                <div class="widget-options">
+                    <button data-choice="0">As a complete, unqualified success for everyone in the state</button>
+                    <button data-choice="1">As entirely disconnected from questions of prosperity or distribution</button>
+                    <button data-choice="2">As irrelevant to the enslaved population's experience</button>
+                    <button data-choice="3">As a genuinely limited success, concentrating wealth in a small planter class while excluding the enslaved majority entirely</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 15.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read a real 1850s article on Mississippi cotton production and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>This week's remaining assignments</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the reading quiz, discussion, and VR activity for Week 15 in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This lesson has referred to enslaved labor mostly in economic terms, as an input to a system. Next week turns directly to the lived experience of slavery itself, including firsthand accounts from Mississippians who lived it.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 15.2 &middot; The Planter's Ledger: Labor, Land, and Profit</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
