@@ -1,0 +1,228 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 18 - Quarter 2 Review
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Quarter 2 Review</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .timeline { border-left: 3px solid #C7922C; margin: 14px 0 14px 10px; padding-left: 20px; }
+    .timeline-item { margin-bottom: 14px; position: relative; }
+    .timeline-item::before { content: ""; position: absolute; left: -25px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #C7922C; }
+    .timeline-year { font-size: 13px; color: #C7922C; }
+    .timeline-text { font-size: 16px; color: #1a2340; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 18</div>
+        <div style="font-size: 12px; color: #666;">Quarter 2 Review: Statehood to the Eve of War</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Review Lesson</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Statehood to the Eve of War</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Quarter 2 Review</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Statehood to the Eve of War</div>
+        <div style="font-size: 16px; color: #666;">Review Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Eight weeks ago, this quarter began with a hurricane-battered Spanish fleet sailing up the Mississippi. It ends with a state that has built its own government, its own constitution, and, on top of both, a plantation economy no honest accounting can separate from the people it enslaved.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This review lesson does not introduce new material. It draws together the threads from Weeks 10 through 17 so you can see the whole arc of Semester 1's second quarter at once, before the Quarter 2 exam and the comprehensive Semester 1 final.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS REVIEW YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace the major events and themes of Weeks 10 through 17 in sequence.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> connect this quarter's political community-building to the economic and social system that community built on top of enslaved labor.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; BUILDING A POLITICAL COMMUNITY</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">From Conquest to Constitution</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This quarter's first five weeks trace Mississippi's path from a contested colonial territory to a fully organized state, a path this course's self-government virtue thread followed closely. Week 10 opened with Bernardo de Galvez's Gulf Coast campaign, a hurricane-battered gamble that removed British power from the lower Mississippi in three weeks, followed immediately by the 1781 Natchez uprising, a reminder that a treaty settles a question on paper far more cleanly than in the minds of the people actually living through it. Week 11 turned to the Choctaw Nation's own removal, tracing a genuine ten-year gap between the limited Treaty of Doak's Stand (1820) and the total Treaty of Dancing Rabbit Creek (1830), a gap explained by specific, datable choices, not inevitable destiny.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Weeks 12 through 14 then built the state itself. The 1798 Territory Act organized the land, deliberately excluding the Northwest Ordinance's ban on slavery from the start. The 1817 Enabling Act split that territory in two, admitting only its western half as Mississippi. The state's first government under David Holmes, its move to a purpose-built capital named for Galvez's own negotiating partner in the Doak's Stand treaty, and its competitive Jacksonian-era party politics all followed. Week 14's 1817 constitution capped this arc: genuine self-government, grounded explicitly in popular sovereignty, standing alongside a constitutional article protecting slavery every bit as deliberately as the rest of the document protected liberty.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before you continue: which single idea from Weeks 10 through 14 do you feel least confident about? (No wrong answer, just check in with yourself before the exam.)</div>
+            <div class="widget-options">
+                <button data-response="Go back and reread Weeks 10 and 11. The gap between Doak's Stand and Dancing Rabbit Creek, and what changed in those ten years, is a theme this course returns to often.">&#128220; The treaties and land cessions</button>
+                <button data-response="Go back and reread Weeks 12 through 14. The relationship between the territorial acts, statehood, and the 1817 constitution's own protections for slavery is a common exam theme.">&#127963;&#65039; Statehood and the constitution</button>
+                <button data-response="Go back and reread Week 13. The move to Jackson, its connection to Galvez and Doak's Stand, and the rise of Jacksonian-era party politics are worth having solid before the exam.">&#128220; Early government and politics</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; AN ECONOMY AND A SOCIETY BUILT ON BONDAGE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Cotton, Slavery, and Antebellum Society</h3>
+        <div class="timeline">
+            <div class="timeline-item"><div class="timeline-year">1793</div><div class="timeline-text">Eli Whitney's cotton gin makes short-staple cotton dramatically more profitable, setting up the economic boom Weeks 11 and 12's newly opened land would soon fuel.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1817</div><div class="timeline-text">Mississippi's constitution protects slavery explicitly in Article VI, the same year it establishes genuine self-government elsewhere in the same document.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1821&ndash;1822</div><div class="timeline-text">The capital moves to a newly founded city named Jackson, and the Flush Times land boom accelerates across the newly ceded Delta and prairie regions.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1830s&ndash;1840s</div><div class="timeline-text">Mississippi's enslaved population becomes a majority of the state's total population, driven substantially by the forced domestic slave trade.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1857</div><div class="timeline-text">The Revised Code compiles Mississippi's detailed slave code, governing enslaved people's movement, assembly, and punishment.</div></div>
+            <div class="timeline-item"><div class="timeline-year">1860</div><div class="timeline-text">Frederick Law Olmsted publishes his account of Mississippi's three-tiered antebellum society; Mississippi stands among the nation's wealthiest states on the eve of the Civil War.</div></div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Weeks 15 through 17 turned from political structure to economic and social reality. Week 15 traced the cotton gin, newly ceded land, and enslaved labor combining to produce Mississippi's antebellum wealth, wealth concentrated overwhelmingly in a small planter class rather than distributed broadly. Week 16 examined that labor system directly: the domestic slave trade that drove much of Mississippi's population growth, the Forks of the Road market at Natchez, the 1857 code's detailed legal control over enslaved people's daily lives, and real testimony from Mississippians who lived under that system, recorded decades later by WPA interviewers and read with care for the conditions under which it was given.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Week 17 completed the picture with a full social portrait, planters, poor whites, and the enslaved, seen through an outside traveler's critical eye and through a runaway advertisement revealing one enslaved man's own resistance to the system built around him. Taken together, Weeks 10 through 17 tell one connected story: a political community that solved real first-order problems of government and self-rule, while building its prosperity on a system that failed the basic test of justice for the majority of people living under it. That tension, not a simple story of progress or a simple story of failure, is the honest shape of this quarter, and it is exactly the tension the Civil War, which Quarter 3 takes up directly, would eventually force the whole nation to confront.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PUTTING THE QUARTER TOGETHER</div>
+            <div class="widget-question">A last check before the exam. Read each item carefully.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Ten years separated Doak's Stand (1820), a limited exchange, from Dancing Rabbit Creek (1830), the total cession and removal treaty." data-hint="Reread Part 1's account of the specific gap between these two treaties.">
+                <div class="widget-row-prompt">1. How many years separated the Treaty of Doak's Stand from the Treaty of Dancing Rabbit Creek?</div>
+                <div class="widget-options">
+                    <button data-choice="0">One year</button>
+                    <button data-choice="1">Ten years</button>
+                    <button data-choice="2">Fifty years</button>
+                    <button data-choice="3">They were the same treaty</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. This quarter's honest shape holds both truths together: real political achievement and a deeply unjust economic and social system built on enslaved labor." data-hint="Reread Part 2's closing evaluation of this quarter's overall shape.">
+                <div class="widget-row-prompt">2. What is this quarter's overall evaluation of Mississippi's political and economic development?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Political development was a complete failure with no real achievement</button>
+                    <button data-choice="1">The economic system caused no real harm to anyone</button>
+                    <button data-choice="2">Political and economic development had no connection to each other</button>
+                    <button data-choice="3">Real political achievement in self-government coexisted with a deeply unjust economic and social system</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 2 Review Activity</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the review activity in Canvas, a synthesis exercise covering all of Weeks 10 through 17.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 2 Exam</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the Quarter 2 exam in Canvas, covering only this quarter's material.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the end of the Fall semester. Quarter 3 opens with the crisis this whole quarter's tensions were building toward: the Civil War and Reconstruction in Mississippi.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Review Lesson</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Quarter 2 Review &middot; Statehood to the Eve of War</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
