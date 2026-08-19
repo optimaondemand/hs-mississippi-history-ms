@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 16 - Lesson 16.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 16.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 16</div>
+        <div style="font-size: 12px; color: #666;">The Evolution of Slavery in Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 16.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Growth of Slavery in Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Evolution of Slavery in Mississippi</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 16.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Growth of Slavery in Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">By 1860, Mississippi held one of the highest shares of enslaved people of any state in the country, a population that had grown not by natural increase alone but through the forced transport of tens of thousands of people from other states.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Weeks 14 and 15 have already shown you that slavery was legally protected in Mississippi's constitution and economically central to its cotton economy. This lesson looks directly at how slavery itself grew and changed in Mississippi between statehood and the Civil War, both in raw numbers and in the specific legal system that governed enslaved people's daily lives.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the domestic slave trade drove Mississippi's enslaved population growth between 1820 and 1860.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the legal system Mississippi's 1857 slave code used to control enslaved people's daily lives.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">chattel slavery</strong> <span style="color: #666; font-size: 14px;">(CHAT-uhl SLAY-vuh-ree)</span>: a system of slavery in which enslaved people were legally classified as property that could be bought, sold, and inherited, rather than as persons with legal rights.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">slave code</strong> <span style="color: #666; font-size: 14px;">(SLAYV kohd)</span>: a body of laws specifically regulating enslaved people's behavior, movement, and punishment.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">enslaved</strong> <span style="color: #666; font-size: 14px;">(en-SLAYVD)</span>: held in bondage as legal property, denied freedom and basic rights by force of law; preferred over "slave" alone because it names something done to a person, not what that person fundamentally is.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A POPULATION GROWN BY FORCE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Domestic Slave Trade</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippi's enslaved population did not grow only through children born to families already living in the state. As the cotton economy Week 15 described expanded rapidly, planters' demand for labor outpaced what natural population growth alone could supply, and a large-scale, organized domestic slave trade filled that gap by forcibly transporting enslaved people from Virginia, Maryland, and other Upper South states to Mississippi and neighboring Deep South states. Historians sometimes call this forced migration the Second Middle Passage, a name deliberately echoing the transatlantic slave trade to underscore how brutal and disruptive this internal trade was to the people who endured it, even though it took place entirely within the United States and after the international slave trade's legal end in 1808.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Natchez became one of the largest slave-trading markets in the entire South during this period, with a site known as the Forks of the Road operating as a major center of sale. Tens of thousands of people passed through markets like this one, sold away from parents, spouses, and children with no legal recourse and often no ability to remain in contact afterward. This is not a peripheral detail of Mississippi's antebellum economy. It is a direct, necessary mechanism by which that economy's labor supply actually grew, and it inflicted a specific, repeated form of family separation on enslaved Mississippians that this course's later units on Reconstruction will show enslaved families spent years afterward trying to repair.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By 1860, enslaved people made up more than half of Mississippi's entire population, one of the highest shares of any state in the country. That number is the direct, measurable result of decades of forced migration layered on top of natural population growth, driven by the same cotton economy Week 15 described as extraordinarily profitable for a small planter class. The profit and the population growth are not separate stories. They are the same story, told from two different angles.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Despite the system's deliberate cruelty, enslaved Mississippians built and maintained real family bonds, religious practice, and community wherever the system's own logic left any room for it, and resisted their bondage in ways ranging from quiet daily acts of self-preservation to open flight. None of this softened what the system actually was or asked of the people living under it, but an honest account of slavery in Mississippi has to include the fact that enslaved people were never merely passive objects acted upon. They were people, exercising whatever agency a brutally restrictive system permitted them, a distinction this course's Historiography insists on holding onto rather than flattening into a single story of pure victimhood.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before reading further, take a moment to sit with the fact that Mississippi's cotton wealth and its enslaved population's rapid growth were driven by the same underlying economic demand. Does connecting those two facts change how you think about the economic history in Week 15? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="That connection is exactly the point this lesson wants you to hold onto. An economic history that describes profit and productivity without naming what produced them, and at what human cost, is an incomplete history.">&#128064; Yes, it makes we reconsider what "growth" and "profit" actually meant</button>
+                <button data-response="That is a fair instinct, since the two units cover genuinely different kinds of evidence, statistics and legal structures versus lived human experience. But the connection between them is real and worth making explicit, which is exactly this lesson's purpose.">&#128220; Not really, they feel like separate topics to me</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A LEGAL SYSTEM OF CONTROL</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">What Mississippi's 1857 Slave Code Actually Required</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippi's 1857 Revised Code laid out, in specific numbered articles, exactly how enslaved people's movement and behavior were to be controlled. One article required that "no slave shall go from the tenement of his master or employer&hellip; without a pass, or some letter or token whereby it may appear that he is proceeding by proper authority," meaning an enslaved person's ability to travel even a short distance depended entirely on a piece of paper someone else controlled. Another article declared any gathering of more than five enslaved people at a public place an "unlawful assembly," directly restricting enslaved people's ability to gather, worship, or organize among themselves without a white person's active oversight.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The code's punishment provisions were severe by design. Assault against a white person by an enslaved person could be punished by up to one hundred lashes, and the code treated certain offenses, including murder, as capital crimes carrying a death sentence. These were not abstract legal categories. They described real physical violence the law explicitly authorized against enslaved people, backed by the full machinery of the state's courts, sheriffs, and organized slave patrols that rode through the countryside checking for enslaved people traveling without a pass.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">These patrols were themselves a distinct local institution, typically made up of small groups of white men, both slaveholders and non-slaveholders, assigned to ride or walk an assigned patrol district within their county on a rotating basis. A patrol's authority was considerable and largely unsupervised in the moment: catching an enslaved person without a valid pass could result in immediate, on-the-spot punishment rather than a hearing before any court first. This structure meant that enforcement of the code did not depend only on formal courts and judges. It reached directly into the countryside through ordinary white citizens deputized, in effect, to police enslaved people's movement on any given night.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Recall Week 14's Article VI, which protected slavery constitutionally and barred the legislature from freeing enslaved people without owner consent. This code is what that constitutional protection actually looked like in daily practice: a detailed legal apparatus reaching into where an enslaved person could walk, whom they could gather with, and what punishment awaited any violation, all enforced by courts an enslaved person had no standing to appeal to as an equal party. Judged by this course's Classical Republican standard, a legal system this thoroughly organized around controlling one group for the material benefit of another fails the basic test of justice this week's virtue names directly, regardless of how efficiently or predictably its own internal rules were enforced.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; SLAVERY'S GROWTH AND LEGAL CONTROL</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="2" data-fb="Right. Mississippi's enslaved population grew substantially through the forced domestic slave trade transporting people from Upper South states, alongside natural population growth." data-hint="Reread the lesson's explanation of what specifically drove Mississippi's enslaved population growth beyond natural increase.">
+                <div class="widget-row-prompt">1. What specifically drove much of Mississippi's enslaved population growth between 1820 and 1860?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Immigration of free Black families from Northern states</button>
+                    <button data-choice="1">Natural population growth alone, with no other factor involved</button>
+                    <button data-choice="2">The forced domestic slave trade transporting enslaved people from Upper South states</button>
+                    <button data-choice="3">A continuation of the legal international slave trade after 1808</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="1" data-fb="Right. The 1857 code required enslaved people to carry a pass to travel anywhere off their owner's property, restricting their movement by law." data-hint="Reread the lesson's explanation of what the 1857 code required for an enslaved person to travel any distance at all.">
+                <div class="widget-row-prompt">2. What did Mississippi's 1857 slave code require of an enslaved person who wished to travel any distance?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Nothing; enslaved people could travel freely without restriction</button>
+                    <button data-choice="1">A written pass or token proving they had their owner's permission</button>
+                    <button data-choice="2">Payment of a travel tax to the county sheriff</button>
+                    <button data-choice="3">Enrollment in the local militia</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 16.2: Voices from Bondage: Mississippi's WPA Slave Narratives</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to hear directly from Mississippians who lived through the system this lesson described.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 16.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read from Mississippi's 1857 slave code directly and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">A legal code describes a system from the outside, as rules imposed on people. The next lesson turns to the people themselves, drawing on real testimony from Mississippians who lived under this system and, decades later, described it in their own words.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 16.1 &middot; The Growth of Slavery in Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
