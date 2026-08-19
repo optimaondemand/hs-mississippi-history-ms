@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 10 - Lesson 10.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 10.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 10</div>
+        <div style="font-size: 12px; color: #666;">Mississippi in the Colonial and Revolutionary Periods</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 10.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Loyalists, Settlers, and a Territory in Transition</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi in the Colonial and Revolutionary Periods</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 10.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Loyalists, Settlers, and a Territory in Transition</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Less than two years after Fort Panmure quietly surrendered on paper, a group of the very settlers Britain had recruited to live there took up arms and briefly seized that same fort back from Spain.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Governments changing hands at a negotiating table, as you saw with Galvez's capitulation terms, is only half the story of conquest. The other half is what happens afterward, when a new government actually has to govern the people already living under the old one. This lesson looks at the settlers of the Natchez District in the years just after Spain took control, a population that did not agree among themselves about the change and that included some who were willing to fight it. It also looks at what Spain did, and did not do, to hold the district together once the shooting from the Revolution itself had moved elsewhere.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the 1781 Natchez uprising against Spanish rule and explain why it happened.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate how well Spanish governance solved the basic problems of order and stability in a newly acquired, religiously and culturally mixed district.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">These words carried over from Lesson 10.1 are still worth reviewing.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">siege</strong> <span style="color: #666; font-size: 14px;">(SEEJ)</span>: a military operation in which an army surrounds a fortified place and cuts it off, often bombarding it, in order to force its surrender rather than take it by direct assault.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">Gulf Coast campaign</strong> <span style="color: #666; font-size: 14px;">(GUHLF kohst kam-PAYN)</span>: the series of military operations Bernardo de Galvez led between 1779 and 1781 that captured British forts along the Mississippi River and Gulf of Mexico during the American Revolution.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; NOT EVERYONE ACCEPTED THE NEW FLAG</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Natchez Uprising of 1781</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The settlers Britain had recruited into the Natchez District over the previous sixteen years, many of them English-speaking planters from Georgia and the Carolinas who had accepted British land grants and remained loyal to the crown, did not automatically transfer that loyalty to Spain simply because a surrender document said the district now belonged to Madrid. In April 1781, a group of these settlers, led by men including a British loyalist named John Blommart, rose up against the small Spanish garrison stationed at Fort Panmure and briefly seized the fort itself, hoping that British forces elsewhere on the Gulf Coast might still relieve them.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">That hope did not pan out. By the time the Natchez rebels rose up, Galvez had already captured Mobile and was in the middle of his campaign against Pensacola, the last major British stronghold on the Gulf Coast, and no British relief force was coming. Spanish authorities eventually put down the uprising, and its leaders faced arrest, though Spain's response was notably not to punish the district's population broadly or strip settlers of the land grants Britain had issued them. This particular choice, restraint after a rebellion rather than mass retaliation, is worth noticing, since a harsher response could easily have made the district considerably harder to govern for years afterward.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Blommart himself was captured and eventually sent to Havana as a prisoner, though he later returned to the district and, remarkably, went on to hold minor positions of trust under the very Spanish government he had once taken up arms against. Several other participants faced lesser punishments or none at all once Spanish officials judged the uprising over and the district's overall stability more valuable than making an example of every rebel. That choice, again, reflects a government weighing what actually keeps a mixed population governable against what a stricter reading of the law might technically allow.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The uprising is a useful reminder that a treaty or a capitulation document settles a question on paper far more cleanly than it settles that question in the minds of the people actually living through it. Loyalty to a distant king, or resentment of a new one, does not disappear the moment a flag changes on a pole. Had British forces further south fared even slightly better in 1781, or had reinforcements genuinely been on their way when the Natchez rebels rose up, this brief uprising might have become something considerably larger and Spain's hold on the district might have looked very different in the years that followed.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">If you had received land from Britain and built a home and a farm under that grant, how do you imagine you would have felt learning your district now belonged to Spain because of a surrender agreement signed somewhere you had never been? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="That sense of having no say in the matter is exactly what drove some Natchez settlers to rebel in 1781, even though the rebellion had little real chance of succeeding once British power collapsed elsewhere on the Gulf Coast.">&#128545; I would feel like my say never mattered</button>
+                <button data-response="Plenty of settlers likely felt this way too, especially once Spain chose to honor existing British land grants rather than seize them. Practical continuity in daily life can outweigh loyalty to a distant flag.">&#128524; I would probably just wait and see what changed day to day</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; HOLDING A MIXED DISTRICT TOGETHER</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">What Spain Actually Had to Govern</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the early 1780s, the population Spain now governed in the Natchez District was genuinely mixed in a way few single colonial governments had managed before: French Catholic families who had lived there since the earlier French period, English-speaking Protestant settlers recruited under British rule, enslaved people brought under both French and British ownership, and Native nations whose land claims predated all three European powers. Spain's own law formally established Catholicism as the district's only recognized religion, which in theory left little room for the Protestant majority Britain had recruited to worship openly.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In practice, Spanish officials in Natchez largely tolerated private Protestant worship as long as it stayed quiet and did not challenge Catholic authority publicly, an informal accommodation that was never guaranteed by law but that Spanish governors judged more practical than strict enforcement. This is a good example of a government solving a real, first-order problem, keeping internal peace among a population that did not share one religion, one language, or one recent loyalty, through flexible practice rather than through the letter of its own official policy. A government that had insisted on rigid enforcement instead might well have provoked far more resistance than the single uprising Natchez actually saw.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Spain also made a deliberate choice to honor land grants and claims that settlers had received under earlier French and British administrations, rather than requiring everyone to reapply from scratch under entirely new Spanish rules. You will see the documentary evidence of this policy directly in this week's second primary source, land and court records that show Spanish officials recognizing claims with origins in a government Spain had just replaced. This continuity mattered enormously to ordinary settlers, whose entire livelihood depended on a stable, recognized claim to their land regardless of which flag happened to be flying over Fort Panmure in a given year.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">None of this means Spanish rule solved every problem or satisfied everyone equally. The 1781 uprising shows real limits to how much loyalty Spain actually won, and Spanish control of the Natchez District would itself prove temporary, lasting only until the 1790s, as you will see in the coming weeks. But judged against the basic test this course applies throughout, whether a government manages to keep internal peace and provide enough legal stability for people to build ordinary lives, Spain's mix of religious flexibility and honored land claims did more real work holding the district together than its official policies on paper would suggest by themselves.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">This week's virtue thread is self-government, and the Natchez District in these years is a genuinely useful case for thinking about what self-government actually requires before it can exist at all. A political community first needs enough basic order and predictable law that its people can plan their lives without fearing that a rebellion, a land dispute, or a change of flag will upend everything they have built. Spain's practical, sometimes improvised governance of a religiously and legally mixed population was not glamorous and did not resemble any tidy constitutional theory. It was, however, a genuine attempt to solve that first-order problem, and the settlers who eventually pushed for a government more clearly their own, a story the next several weeks will follow all the way to statehood, first needed a district stable enough to make that pursuit possible.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; A TERRITORY IN TRANSITION</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="3" data-fb="Right. British loyalist settlers, hoping for British relief that never arrived, briefly seized Fort Panmure from its small Spanish garrison in April 1781." data-hint="Reread the lesson's explanation of who rebelled in 1781 and why.">
+                <div class="widget-row-prompt">1. What triggered the 1781 Natchez uprising?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Enslaved people in the district organized a rebellion against Spanish law</button>
+                    <button data-choice="1">Choctaw and Chickasaw nations jointly attacked Fort Panmure</button>
+                    <button data-choice="2">French Catholic settlers demanded Spain enforce religious law more strictly</button>
+                    <button data-choice="3">British loyalist settlers rose up hoping for British relief that never came</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0" data-fb="Right. Spanish officials generally tolerated quiet private Protestant worship and honored existing British and French land grants, practical flexibility rather than strict enforcement of official policy." data-hint="Reread the lesson's explanation of how Spain actually handled a religiously and legally mixed population, as opposed to what its official policy said on paper.">
+                <div class="widget-row-prompt">2. How did Spanish officials generally handle the district's religious and legal diversity in practice?</div>
+                <div class="widget-options">
+                    <button data-choice="0">With practical flexibility, tolerating private worship and honoring existing land claims</button>
+                    <button data-choice="1">By expelling all non-Catholic settlers from the district</button>
+                    <button data-choice="2">By voiding every British-era land grant immediately</button>
+                    <button data-choice="3">By requiring every settler to convert to Catholicism within one year</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 10.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about the Natchez District's land and court records from this period, and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>This week's remaining assignments</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the reading quiz, discussion, and VR activity for Week 10 in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The Natchez District's population kept growing under Spain, but the treaties and land pressures pushing on the Native nations who had lived on this land far longer than any European settler were only getting stronger. Next week turns to those treaties directly, and to the cost land cessions imposed on the Choctaw and Chickasaw nations.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 10.2 &middot; Loyalists, Settlers, and a Territory in Transition</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

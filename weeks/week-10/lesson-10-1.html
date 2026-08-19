@@ -1,0 +1,239 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 10 - Lesson 10.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 10.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 10</div>
+        <div style="font-size: 12px; color: #666;">Mississippi in the Colonial and Revolutionary Periods</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 10.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Mississippi During the American Revolution: Spain's War on the Gulf Coast</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi in the Colonial and Revolutionary Periods</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 10.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Mississippi During the American Revolution: Spain's War on the Gulf Coast</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In September 1779, a Spanish governor barely thirty years old sailed up the Mississippi River commanding a fleet a hurricane had already battered, and within three weeks a British fort at Natchez surrendered without a single shot fired inside Mississippi itself.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Mississippi's role in the American Revolution is not the story most students picture when they hear that name, colonial militia facing British regulars on a New England battlefield. It is instead a story about Spain, allied with France against Britain, using the Mississippi River as a corridor of conquest that stretched from New Orleans north into what is now Mississippi. This lesson follows Bernardo de Galvez's Gulf Coast campaign and asks what his success, and the very real chance it might not have happened at all, reveals about how much of this history turned on the decisions of particular people facing particular circumstances, rather than on any outcome that had to occur.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Spain entered the American Revolutionary War and how that decision reached Mississippi.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how Bernardo de Galvez's Gulf Coast campaign brought the Natchez District under Spanish control.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">siege</strong> <span style="color: #666; font-size: 14px;">(SEEJ)</span>: a military operation in which an army surrounds a fortified place and cuts it off, often bombarding it, in order to force its surrender rather than take it by direct assault.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">Gulf Coast campaign</strong> <span style="color: #666; font-size: 14px;">(GUHLF kohst kam-PAYN)</span>: the series of military operations Bernardo de Galvez led between 1779 and 1781 that captured British forts along the Mississippi River and Gulf of Mexico during the American Revolution.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A HURRICANE, A YOUNG GOVERNOR, AND A DECISION</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Spain Enters Britain's War</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In June 1779, Spain declared war on Great Britain. Spain's king made this decision as an ally of France, which was already supporting the American colonies, not as a direct ally of the United States itself. Spain had its own reasons for wanting to weaken Britain, including old territorial losses it hoped to reverse and a general interest in seeing British power in North America checked. Whatever Spain's own motives, the effect reached all the way to the Mississippi River, because Spain already controlled Louisiana, and Louisiana's governor was a young, ambitious officer named Bernardo de Galvez, not yet thirty-two years old, who had spent several years building relationships with settlers and Native nations along the lower Mississippi and was eager to act the moment war was formally declared.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Galvez did not wait for detailed instructions from Spain before moving. He had already begun assembling troops, supplies, and boats at New Orleans in anticipation of the declaration, gathering a genuinely mixed force of Spanish regulars, Louisiana militia, free men of color, Native allies, and even a number of American volunteers who saw an opportunity to strike at British holdings from the south. This kind of independent initiative by a distant colonial governor, acting on his own judgment before hearing back from a royal court an ocean away, is itself a reminder that decisions in this period were rarely made by abstract nations so much as by particular people making particular calls, often with incomplete information and real risk to their own careers if they guessed wrong.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Even before Spain formally entered the war, its presence on the Mississippi was already reaching the American cause in a quieter way. A New Orleans merchant named Oliver Pollock, working with Galvez's cooperation, helped move gunpowder and other supplies up the Mississippi and Ohio Rivers to American forces fighting far to the north, including the campaign George Rogers Clark led against British posts in what is now Illinois and Indiana. None of this aid depended on any grand strategy handed down from a single capital. It depended on particular relationships between particular men, a Spanish governor willing to look the other way and a merchant willing to take the financial risk, long before Spain's king ever signed a declaration of war.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Then, in August 1779, disaster struck before Galvez's campaign had even begun: a hurricane tore through New Orleans and wrecked much of the fleet he had assembled, sinking or damaging supply ships and scattering the resources he had spent months collecting. A more cautious commander might reasonably have delayed the entire campaign for months to rebuild, giving British forces along the Mississippi valuable time to reinforce their own defenses. Galvez instead chose to press forward with what he had left, a decision that was anything but guaranteed to succeed and that historians still treat as a turning point in whether this campaign happened at all in 1779, rather than a year or more later under very different circumstances.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Put yourself in Galvez's position for a moment: a hurricane just wrecked the fleet you spent months building, and the enemy doesn't yet know how badly you were hurt. Do you press ahead immediately with what's left, or wait and rebuild while the risk of discovery grows? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Speed has its own logic here: pressing ahead means striking before the British know how weak you actually are. That is a real gamble, not a safe choice, but it is not an irrational one either.">&#9889; Press ahead now</button>
+                <button data-response="Waiting to rebuild is the safer-feeling choice, but it gives the enemy time too. Galvez's actual decision, and the fact that it worked, is worth weighing against how easily it could have gone the other way.">&#9203; Wait and rebuild first</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE FALL OF FORT PANMURE</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Campaign That Reached Natchez Without a Battle There</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Galvez's depleted force moved north from New Orleans in early September 1779 and captured its first target, a modest British post called Fort Bute near Manchac, within days and with little resistance. The larger test came next at Baton Rouge, a well-built British fort protected by wide ditches, earthen walls, and more than a dozen cannons. Rather than attacking the fort's strongest point directly, Galvez used a diversion, positioning some of his troops to draw British fire and attention away from where he actually placed his artillery, and after several hours of bombardment the fort's defenses were badly damaged and its commander, Lieutenant Colonel Alexander Dickson, requested terms.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">What happened next is the detail that connects this campaign directly to Mississippi. Galvez's terms of capitulation, the formal document spelling out what Dickson's surrender would actually cover, required the British to give up not only Baton Rouge but also Fort Panmure at Natchez, a separate post more than a hundred miles upriver that Galvez had never attacked and whose garrison had faced no fighting at all. Dickson agreed, and Fort Panmure changed hands purely on paper, decided at a negotiating table outside Baton Rouge by two commanders working out the terms of somebody else's battle.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Judged by the standard this course has used throughout, whether a leader's own character helps explain success or failure at a real, first-order problem, Galvez's insistence on including Natchez in the surrender terms is worth taking seriously as a case of genuine boldness paying off. A more timid or purely by-the-book commander, one who negotiated only for what he had actually besieged, might have left Fort Panmure standing for the British to reinforce later. Galvez's decisiveness at the negotiating table, not just on the battlefield, is a real part of why an entire district changed flags without a fight ever reaching it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Within about three weeks, Spain had removed British military power from the entire lower Mississippi corridor, a remarkably fast result that depended on several things that did not have to go Spain's way: a hurricane that could have wrecked the campaign entirely rather than merely delaying it, a British commander willing to include a fort he had not lost militarily, and a young governor willing to gamble on speed over caution. None of this was settled in advance. Had any one of those pieces gone differently, a slower Spanish rebuild, a more stubborn Dickson, a more cautious Galvez, Fort Panmure at Natchez might well have remained in British hands for years longer, and the district's later history under Spain, which the rest of this week studies in detail, would not have unfolded the same way at all. Galvez would go on to lead further campaigns against Mobile in 1780 and Pensacola in 1781, eventually driving British power out of the entire Gulf Coast, but it began here, with a decision made in the ruins of a hurricane.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; SPAIN'S GULF COAST CAMPAIGN</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Spain declared war as France's ally, hoping to weaken Britain and recover its own territorial losses, not as a direct ally of the United States." data-hint="Reread the lesson's explanation of whose ally Spain was when it declared war on Britain.">
+                <div class="widget-row-prompt">1. Why did Spain declare war on Britain in 1779?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Spain had signed a direct alliance with the United States</button>
+                    <button data-choice="1">Spain acted as France's ally and hoped to weaken British power</button>
+                    <button data-choice="2">Britain had attacked Spanish Louisiana first</button>
+                    <button data-choice="3">The Continental Congress paid Spain to enter the war</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="2" data-fb="Right. Fort Panmure at Natchez was written into the Baton Rouge capitulation terms, so it surrendered without ever being directly attacked." data-hint="Reread the lesson's explanation of how, specifically, Fort Panmure at Natchez ended up under Spanish control.">
+                <div class="widget-row-prompt">2. How did Fort Panmure at Natchez come under Spanish control in 1779?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Galvez led a direct assault on the fort itself</button>
+                    <button data-choice="1">The garrison at Natchez surrendered on its own, before Galvez arrived</button>
+                    <button data-choice="2">It was included as a term of the Baton Rouge capitulation, without being attacked</button>
+                    <button data-choice="3">Native allies of Spain seized the fort independently</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 10.2: Loyalists, Settlers, and a Territory in Transition</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see what happened to the people already living in the Natchez District once Spain took charge, and how not everyone welcomed the change quietly.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 10.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about the actual capitulation terms Galvez and Dickson agreed to at Baton Rouge, and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Spain would govern the Natchez District for the next two decades, a period you'll follow across the next several weeks. But governing a place and winning it are two different problems, and not every settler already living there was pleased to find a new flag flying over Fort Panmure. The next lesson turns to what that transition actually looked like on the ground.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 10.1 &middot; Mississippi During the American Revolution: Spain's War on the Gulf Coast</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
