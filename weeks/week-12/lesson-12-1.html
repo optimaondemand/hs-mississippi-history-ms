@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 12 - Lesson 12.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 12.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 12</div>
+        <div style="font-size: 12px; color: #666;">The Road to Statehood: Mississippi Territory Becomes a State</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 12.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">From Territory to State: The Path to the Union</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Road to Statehood: Mississippi Territory Becomes a State</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 12.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">From Territory to State: The Path to the Union</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Before Mississippi could become a state, Congress first had to decide what "Mississippi" even was, and that decision required settling a boundary dispute with an entirely different state.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Statehood did not begin with a constitution or a governor. It began with an act of Congress in 1798 that created a new territory out of contested land, borrowed its government structure from an existing model used elsewhere in the country, and made a specific, deliberate choice about slavery that would shape Mississippi's future for decades. This lesson reads that founding act directly.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how and why Congress created the Mississippi Territory in 1798.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the specific choice the 1798 Territory Act made about slavery, and how that differed from the Northwest Ordinance it was otherwise modeled on.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">territory</strong> <span style="color: #666; font-size: 14px;">(TAIR-ih-tor-ee)</span>: an organized region of the United States governed directly by the federal government, not yet a state, usually understood as a step on the path toward eventual statehood.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">enabling act</strong> <span style="color: #666; font-size: 14px;">(en-AY-bling AKT)</span>: a law passed by Congress authorizing the people of a territory to write a constitution and form a state government, the formal first step toward admission as a state.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; SETTLING A DISPUTE THAT WASN'T ABOUT MISSISSIPPI</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Territory Born from a Boundary Dispute</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">On April 7, 1798, Congress passed "An Act for an amicable settlement of limits with the state of Georgia, and authorizing the establishment of a government in the Mississippi territory." Notice what that title actually leads with: a boundary dispute with Georgia, not Mississippi itself. Georgia had long claimed vast western lands stretching toward the Mississippi River, overlapping with territory the United States also considered its own, and the same 1798 law that created the Mississippi Territory began by authorizing commissioners to sort out exactly which land belonged to whom.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Once those claims were addressed, the act defined a specific district, bounded by the Mississippi River, the Chattahoochee River, and lines running to the thirty-first degree of north latitude, and declared it "one district, to be called the Mississippi Territory." This was not yet anything close to the modern state's shape or borders, which would take decades and several more acts of Congress to settle, but it was the first time "Mississippi" existed as an organized political unit at all, rather than simply land claimed by competing powers and nations.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The act then borrowed its government structure wholesale from an existing model: the territory would be governed, in the law's own words, "in all respects similar to that now exercised in the territory northwest of the river Ohio," meaning the same basic system Congress had already used to organize what is now Ohio, Indiana, Illinois, and neighboring states under the Northwest Ordinance of 1787. A governor, appointed judges, and an eventual elected assembly as the population grew, all modeled on a system already tested elsewhere, rather than invented from nothing for Mississippi alone.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">One detail of that borrowed structure is worth noting specifically. The act combined two jobs into one office: it declared that "the powers, duties and emoluments of a superintendent of Indian affairs for the southern department, shall be united with those of governor." In other words, from the very beginning, Mississippi's territorial governor was simultaneously the federal government's chief official for managing relations with the Choctaw, Chickasaw, and other nations whose land the territory bordered or overlapped. The treaties and land cessions you studied in Week 11 were not handled by some separate, distant federal office. They ran directly through the same office that governed the territory's own settlers day to day.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The boundary dispute with Georgia that opened this lesson did not resolve quickly or cheaply. It would take years of further negotiation, and eventually a payment of one million two hundred fifty thousand dollars to Georgia, before the competing claims this 1798 act first authorized commissioners to examine were fully settled. Statehood, when it finally came, would be built on top of that expensive, hard-won resolution, not around it.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Does it surprise you that the law creating the Mississippi Territory spends its first sections settling a dispute with Georgia, rather than talking about Mississippi's own future? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="It is a useful reminder that new political units rarely start from a blank map. Somebody else's prior claim almost always has to be resolved first, and that resolution shapes what the new territory can even become.">&#128561; Yes, that ordering feels backwards</button>
+                <button data-response="That instinct fits how territorial organization actually worked across the early United States. Land claims, boundaries, and competing state interests usually had to be untangled before a new government could even be authorized.">&#129504; No, that makes sense once you think about it</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; ONE MODEL, ONE DELIBERATE EXCEPTION</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Government Modeled on the Northwest Ordinance, With One Exclusion</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The 1798 act's own text is precise about how closely it followed the Northwest Ordinance, and precise about the one place it deliberately did not. The law authorizes a government "similar to that now exercised in the territory northwest of the river Ohio," and then adds a specific phrase: "excepting and excluding the last article of the ordinance made for the government thereof." The Northwest Ordinance's final article was the provision banning slavery in that territory. Congress wrote the Mississippi Territory Act to copy nearly everything else about the Northwest Ordinance's government structure while explicitly leaving that one article out, meaning slavery would remain lawful in Mississippi Territory from its very creation.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This was not an oversight or a vague silence on the subject. The act names the excluded article specifically, which means whoever drafted this law knew exactly what they were choosing to leave out and why. At the same time, the act's seventh section did place one real limit on slavery: it made it illegal to import enslaved people into the territory directly from outside the United States, punishable by a three-hundred-dollar fine per person and freedom for anyone imported in violation of the law. Slavery already established within the United States could continue and expand into the new territory; the international slave trade specifically could not supply it directly.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This distinction, permitting domestic slavery while restricting its direct foreign supply, is easy to read past quickly, but it is a genuinely consequential choice this course will return to directly in Weeks 15 through 17, when Mississippi's plantation economy and the evolution of slavery within the state become the central subject. For now, the point to hold onto is this: Mississippi's founding document as a territory did not leave slavery's legal status to later debate or accident. It settled the question, in specific and deliberate language, from the very first act of Congress that gave Mississippi a government at all.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Nothing about this outcome was strictly guaranteed in advance. Congress had, after all, just banned slavery in the territory northwest of the Ohio River a decade earlier, proving that excluding slavery from a new territory was a real option Congress was willing to exercise elsewhere. Choosing not to exercise that same option for Mississippi reflected specific pressures, the existing presence of slavery among settlers already living in the region under earlier Spanish and British rule, and the economic interests of a growing planter population, not some automatic rule that new Southern territories always had to permit it. A different Congress, facing a differently organized set of pressures, could plausibly have written this act differently.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; THE 1798 TERRITORY ACT</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. The act's early sections address a boundary dispute between the United States and Georgia before defining the Mississippi Territory itself." data-hint="Reread the lesson's explanation of what the act's title and early sections actually address first.">
+                <div class="widget-row-prompt">1. What issue does the 1798 Mississippi Territory Act address before defining the territory itself?</div>
+                <div class="widget-options">
+                    <button data-choice="0">A trade dispute with Spain over the Mississippi River</button>
+                    <button data-choice="1">A boundary dispute between the United States and the state of Georgia</button>
+                    <button data-choice="2">A treaty renegotiation with the Choctaw Nation</button>
+                    <button data-choice="3">A disagreement between France and Britain over West Florida</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. The act specifically excluded the Northwest Ordinance's article banning slavery, while still restricting the direct importation of enslaved people from outside the United States." data-hint="Reread the lesson's explanation of what the 1798 act specifically excluded from the Northwest Ordinance's model, and what limited restriction it did include.">
+                <div class="widget-row-prompt">2. How did the 1798 Territory Act handle slavery compared to the Northwest Ordinance it was otherwise modeled on?</div>
+                <div class="widget-options">
+                    <button data-choice="0">It banned slavery entirely, exactly as the Northwest Ordinance had</button>
+                    <button data-choice="1">It left the question completely unaddressed and silent</button>
+                    <button data-choice="2">It required all enslaved people to be freed within five years</button>
+                    <button data-choice="3">It deliberately excluded the anti-slavery article while still banning direct importation from outside the United States</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 12.2: Mississippi's Enabling Act and Admission in 1817</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see how, nineteen years later, only part of this territory finally became the state of Mississippi.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 12.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the 1798 Mississippi Territory Act directly and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Nineteen years passed between this territorial act and Mississippi's actual admission as a state, years during which the territory grew, expanded, and eventually split. The next lesson picks up that story with the 1817 Enabling Act that finally brought statehood, for only part of the territory this lesson described.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 12.1 &middot; From Territory to State: The Path to the Union</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
