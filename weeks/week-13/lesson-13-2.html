@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 13 - Lesson 13.2
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 13.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 13</div>
+        <div style="font-size: 12px; color: #666;">Mississippi's Government and Political Development</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 13.2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Political Parties and Power in Early Mississippi</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi's Government and Political Development</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 13.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Political Parties and Power in Early Mississippi</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">By the late 1820s, two rival Natchez newspapers were covering the same elections from opposite sides of the same street, each certain the other was leading the state astray.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Stable government structures, like the ones Lesson 13.1 described, are only half the story of a functioning political community. The other half is genuine political competition, real disagreement about who should hold power and how. This lesson follows the rise of organized political factions in Mississippi during the 1820s, and the newspapers that gave those factions a public voice.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the rise of competing political factions in Mississippi during the Jacksonian era.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate whether organized political competition strengthens or threatens a young political community's stability.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">These words carried over from Lesson 13.1 are still worth reviewing.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">legislature</strong> <span style="color: #666; font-size: 14px;">(LEJ-is-lay-cher)</span>: the branch of government responsible for making a state's laws, in Mississippi's case divided into a Senate and a House of Representatives.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">political faction</strong> <span style="color: #666; font-size: 14px;">(puh-LIT-ih-kuhl FAK-shuhn)</span>: an organized group within a government or society united around shared political interests or leaders, often in competition with other such groups.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; MISSISSIPPI TAKES SIDES</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Jacksonian Democrats and Their Opponents</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Mississippi's earliest years as a state saw relatively little organized party competition, but that changed sharply during the 1820s as national politics reorganized around Andrew Jackson. In the 1828 presidential election, Mississippi voters backed Jackson over incumbent President John Quincy Adams by a wide margin, over sixty percent of the vote, reflecting genuine enthusiasm for Jackson specifically among a population that, as Lesson 13.1 showed, already associated him with opening new farmland through the Treaty of Doak's Stand. Jackson's supporters organized themselves as Democrats, while his opponents, who favored a stronger national government role in infrastructure and the economy, organized as National Republicans.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This same rivalry played out at the state level too. In the 1829 Mississippi gubernatorial election, Democrat Gerard Brandon defeated National Republican George Winchester, a contest that mirrored the national party divide within Mississippi's own borders rather than remaining a distant argument about Washington politics alone. These were not vague disagreements about abstract political philosophy. They were organized, competing efforts to control real offices with real power over the young state's laws, land, and money.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">What the two parties actually disagreed about mattered too, not just who belonged to which side. Democrats generally favored a smaller, more limited federal role in the economy and championed westward expansion and land availability for ordinary settlers, positions that resonated strongly in a state still filling in with new farms carved from recently ceded Native land. National Republicans, by contrast, generally favored federally funded infrastructure, protective tariffs supporting American manufacturing, and a more active national government generally. Mississippi's overwhelming preference for the Democratic position in this period reflects something real about the state's own economic interests and self-understanding at this moment, not simply personal loyalty to Jackson alone.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Political competition at this scale needed a way to reach voters, and in the 1820s that meant newspapers above nearly everything else. Natchez, still the state's most established population center even after the capital's move to Jackson, supported multiple competing papers during this period, including the Statesman and Gazette and the Southern Galaxy, both publishing through the late 1820s and covering the very elections just described from their own particular editorial vantage points.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">These were not neutral bulletin boards reporting bare facts. A 19th-century American newspaper editor was typically an outspoken partisan in his own right, often personally connected to the candidates and factions he covered, and his paper's coverage reflected that involvement openly rather than hiding it behind any pretense of neutrality. Readers picking up the Statesman and Gazette or the Southern Galaxy in 1828 or 1829 knew, in a way modern readers of an unfamiliar paper often do not, exactly what political leanings shaped the coverage in front of them. That kind of transparency about bias, even without neutrality itself, is its own small kind of honesty.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">If a single town supported multiple competing newspapers, each covering the same election from a different political angle, do you think that made voters better informed, more confused, or both at once? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Both at once is a genuinely reasonable answer. Competing coverage exposes readers to more than one perspective, but it also means no single, neutral account of events was widely available, a tension that has never fully disappeared from political journalism.">&#129504; Probably both, depending on the reader</button>
+                <button data-response="That instinct has merit too. Access to multiple viewpoints, even partisan ones, at least meant no single paper controlled the entire political conversation in Natchez, which is its own kind of safeguard.">&#128240; More informed, since more perspectives were available</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; DOES FACTION HELP OR HARM SELF-GOVERNMENT</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Competing Interests, Judged by What They Actually Produced</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Organized political competition is not automatically a sign of health or a sign of danger. Judged against this course's standard for evaluating self-government, whether a political community can resolve internal disagreement without dissolving into disorder, Mississippi's party competition in the 1820s is a genuinely mixed case worth weighing carefully rather than praising or condemning by default. On one hand, contested elections with real stakes and real alternatives, decided at the ballot box rather than by force or by a single family's inherited authority, are themselves a meaningful achievement for a state barely a decade old.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">On the other hand, rival newspapers arguing past each other rather than toward any shared understanding can just as easily deepen division as resolve it, hardening readers into fixed camps rather than helping the broader public reason its way toward a common judgment. Both possibilities were genuinely present in Mississippi during this decade, and nothing about the outcome was guaranteed in advance. A different set of leaders, a different economic crisis, or a different national political moment could plausibly have pushed this same factional energy toward instability rather than toward the relatively orderly, election-based competition Mississippi mostly experienced.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">What actually happened in Mississippi's case leans toward the more hopeful reading. Elections were held, results were accepted, and power changed hands through votes rather than through force, even amid genuine, sometimes bitter disagreement carried out in print. That is not a small accomplishment for a political community still working out its own basic institutions. Whether that same pattern would hold up under greater strain is a question this course returns to directly in the quarters ahead, as Mississippi's political community faces tests considerably more severe than a contested governor's race.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">It is worth remembering, too, that this competitive political culture developed among a fairly narrow slice of Mississippi's actual population. The right to vote and hold office in this period belonged only to free white men who met property or tax requirements, meaning the lively contest between Democrats and National Republicans described in this lesson, however genuine, represented the political voice of only part of the people actually living in the state. A fuller accounting of Mississippi's political development has to hold both facts at once: real, functioning competition among those who could participate, and a much larger population excluded from that competition entirely. That gap between a genuinely competitive politics and a genuinely inclusive one is a thread this course will keep pulling on, particularly once Weeks 15 through 17 turn directly to the enslaved population these newspapers and elections almost entirely left out of their own account of Mississippi's political life.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PARTIES AND POWER</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="1" data-fb="Right. Mississippi voters strongly favored Jackson over Adams in 1828, and Democrat Gerard Brandon defeated National Republican George Winchester in the 1829 governor's race." data-hint="Reread the lesson's explanation of the specific election results from 1828 and 1829.">
+                <div class="widget-row-prompt">1. What do the 1828 presidential results and the 1829 gubernatorial results in Mississippi both show?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Mississippi voters were evenly split between the two parties</button>
+                    <button data-choice="1">Mississippi voters strongly favored Jackson and his allied Democratic candidates in this period</button>
+                    <button data-choice="2">Mississippi had no meaningful party competition at either level</button>
+                    <button data-choice="3">National Republicans won every contested election in Mississippi during this period</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. The lesson argues that organized political competition can either strengthen self-government through orderly, election-based contests, or deepen division, and Mississippi's actual outcome leaned toward the more hopeful reading." data-hint="Reread the lesson's evaluation of whether political competition helped or harmed Mississippi's self-government in this period.">
+                <div class="widget-row-prompt">2. According to this lesson's evaluation, how should Mississippi's 1820s party competition be judged?</div>
+                <div class="widget-options">
+                    <button data-choice="0">As an unambiguous failure of self-government</button>
+                    <button data-choice="1">As entirely irrelevant to how well the state actually governed itself</button>
+                    <button data-choice="2">As proof that Mississippi never developed genuine political competition</button>
+                    <button data-choice="3">As a genuinely mixed case that leaned toward showing organized competition can strengthen self-government when disputes are resolved through elections rather than force</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 13.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about a second Natchez newspaper from this period and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>This week's remaining assignments</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Complete the reading quiz, discussion, and VR activity for Week 13 in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Mississippi's government and its political competition both took shape within a specific constitutional framework, the 1817 constitution referenced throughout these lessons but not yet examined directly. Next week turns to that document itself, and to how it compares with the U.S. Constitution it was built to fit inside.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 13.2 &middot; Political Parties and Power in Early Mississippi</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

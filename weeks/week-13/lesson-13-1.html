@@ -1,0 +1,240 @@
+<!--
+    Optima Academy Online - INTERACTIVE Student Lesson Page.
+    Mississippi History - Week 13 - Lesson 13.1
+    DEPLOYMENT: GitHub-hosted, embedded in Canvas via iframe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mississippi History &mdash; Lesson 13.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">MISSISSIPPI HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 13</div>
+        <div style="font-size: 12px; color: #666;">Mississippi's Government and Political Development</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 13.1</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Mississippi's First Government: Governors, Legislature, and Early Politics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Mississippi's Government and Political Development</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 13.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Mississippi's First Government: Governors, Legislature, and Early Politics</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Mississippi's capital city is named after a man who never governed it, and sits at a bluff first claimed by a trader whose own son would sign away a Choctaw homeland five years earlier.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Once Mississippi became a state in 1817, it needed an actual government to run, not just a constitution authorizing one. This lesson follows the state's earliest years in practice: its first governor, its early legislature, and the surprisingly deliberate decision to move the state's capital to a brand-new city built specifically for that purpose.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe David Holmes's role as Mississippi's first state governor and why his leadership mattered during the transition to statehood.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why and how Mississippi's capital moved from Natchez to a newly founded city named Jackson.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Internet access to view this lesson page and its linked primary source</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook or digital document for your reading notes</div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128161; GLOSSARY</div>
+        <div style="font-size: 15px; color: #0E1C42; margin-bottom: 12px;">A few words in this lesson are worth reviewing before you read.</div>
+        <div style="margin-bottom: 10px;"><strong style="color: #0E1C42; font-size: 17px;">legislature</strong> <span style="color: #666; font-size: 14px;">(LEJ-is-lay-cher)</span>: the branch of government responsible for making a state's laws, in Mississippi's case divided into a Senate and a House of Representatives.</div>
+        <div><strong style="color: #0E1C42; font-size: 17px;">political faction</strong> <span style="color: #666; font-size: 14px;">(puh-LIT-ih-kuhl FAK-shuhn)</span>: an organized group within a government or society united around shared political interests or leaders, often in competition with other such groups.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A STEADY HAND AT A UNCERTAIN MOMENT</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">David Holmes, Mississippi's First State Governor</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">David Holmes had already served as the Mississippi Territory's final territorial governor before statehood, and in October 1817 he became the new state's first elected governor, serving until 1820. That continuity mattered. A brand-new state government, formed by a convention that had only just decided statehood was "expedient" at all, faced real risk of confusion or conflict during its first years. Holmes's experience governing the same population as territorial governor gave the transition a stability it might not have had under a governor with no prior connection to the territory at all.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Under the 1817 constitution, Mississippi's government followed a now-familiar structure: a governor as chief executive, a bicameral legislature made up of a Senate and House of Representatives, and a judiciary to interpret and apply the state's laws. The legislature met initially near Natchez, at the small town of Washington named in the 1817 Enabling Act as the convention's meeting place, reflecting how thoroughly the territory's population, and its earliest political institutions, were concentrated in that one corner of the new state.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">One of the legislature's most immediate practical tasks was carving the new state into counties, the local units of government that would handle courts, land records, tax collection, and elections closer to where people actually lived. Recall from Week 12 that the 1817 Enabling Act already listed fourteen counties by name when apportioning delegates to the constitutional convention, evidence that county government was not an afterthought added once statehood arrived, but a structure already partly in place before the state's own constitution was even written. Building durable local institutions before the state government above them was even finished is itself a modest but real achievement.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Holmes's own governorship was, by most accounts, a relatively calm one. He focused on practical tasks: organizing the new state's judiciary, working with the legislature to establish counties and local offices across a territory that was still filling in with new settlers every year, and managing the state's still-close relationship with federal authority over Native land cessions, the same authority Week 12 showed was combined with the governor's office by law since 1798. None of this made headlines the way a dramatic crisis might have, but a new government quietly succeeding at these unglamorous administrative tasks is itself a real measure of success, not a lesser one.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">A concentration that heavy was never going to last as the state's population grew and spread inland, away from the river. Judged by this course's standard for evaluating political success, a government's ability to bind a whole political community together rather than just one region of it, a capital and legislature confined permanently to one corner of the state risked leaving much of Mississippi feeling governed from outside rather than as genuine participants in a shared political community.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Why might a brand-new state government specifically want a governor who had already led the same population as a territorial official, rather than an outsider with no prior connection to Mississippi at all? (No wrong answer, just check in with yourself.)</div>
+            <div class="widget-options">
+                <button data-response="Continuity of leadership at a genuinely uncertain moment, a first year of statehood with an untested constitution, can lower the risk of confusion or conflict considerably, even if it also means fewer fresh perspectives at the top.">&#128274; Continuity reduces risk during an uncertain transition</button>
+                <button data-response="That is also a fair instinct. A truly new government might benefit from a leader untethered to the territorial period's existing power structures. Mississippi's convention chose continuity instead, and that choice is worth evaluating rather than assuming was automatically correct.">&#127775; A fresh start might have served the new state better</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; BUILDING A CAPITAL FROM NOTHING</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">From Natchez to a City Built for the Purpose</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1821, Mississippi's General Assembly acted directly on the problem Part 1 raised: it voted to relocate the state capital away from the Natchez area to a more central location, better positioned to serve the entire state as settlement continued to spread. Commissioners selected a bluff along the Pearl River known as LeFleur's Bluff, named for Louis LeFleur, a trader who had established a post there decades earlier among the Choctaw. In November 1821 the legislature authorized the site, and by 1822 the new capital was formally established under a new name: Jackson.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The name was not incidental. Andrew Jackson was genuinely popular in Mississippi at that moment, not only as a military hero but specifically as the U.S. commissioner who had negotiated the Treaty of Doak's Stand in 1820, the very treaty you studied in Week 11 that opened millions of acres of former Choctaw land to settlement. Naming the new capital after him was a direct, deliberate tribute to a man whose actions had reshaped the state's own map only a year earlier, a genuinely small-world detail connecting this week's government-building directly to last week's land cessions.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">There is a further, quieter connection worth naming. Louis LeFleur, the trader whose bluff became Jackson, was the father of Greenwood LeFlore, the Choctaw chief you read about in Week 11 who helped negotiate the Treaty of Dancing Rabbit Creek and then chose to remain in Mississippi himself rather than relocate west. Mississippi's political history in this period was not a series of separate, unconnected stories. The same handful of families, treaties, and geographic features kept reappearing across supposedly different chapters of the state's founding, a genuine reminder that this was a small, tightly interconnected world of people making decisions that echoed across each other's lives.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Choosing to build an entirely new capital city, rather than simply keep the state government in an already established town, was itself a real decision, not the only option available. Mississippi could have kept its capital in Natchez indefinitely, or moved it to an already-existing settlement rather than founding one from scratch. Building Jackson specifically, on a bluff with no prior town of its own, gave the legislature a genuinely central location unbeholden to any one region's existing interests, a choice that reflected a deliberate judgment about what would best serve a growing state's whole political community, not merely its wealthiest or longest-settled corner. That deliberate, forward-looking choice, made only a few years into statehood, is itself a small but telling early sign of a government willing to plan for a future larger than its own immediate moment.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; MISSISSIPPI'S EARLY GOVERNMENT</div>
+            <div class="widget-question">Check your understanding of what you just read.</div>
+            <div class="widget-row" data-correct="0" data-fb="Right. David Holmes had already served as the final territorial governor, giving the new state government real continuity during an uncertain first transition." data-hint="Reread the lesson's explanation of David Holmes's prior role before becoming Mississippi's first state governor.">
+                <div class="widget-row-prompt">1. Why did David Holmes's role as Mississippi's first state governor provide genuine continuity?</div>
+                <div class="widget-options">
+                    <button data-choice="0">He had already served as the territory's final territorial governor before statehood</button>
+                    <button data-choice="1">He was a completely new figure with no prior connection to Mississippi</button>
+                    <button data-choice="2">He was appointed directly by Congress rather than elected</button>
+                    <button data-choice="3">He had previously served as governor of Georgia</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="2" data-fb="Right. The new capital was named after Andrew Jackson specifically because of his popularity following the Treaty of Doak's Stand, which opened Choctaw land to settlement." data-hint="Reread the lesson's explanation of why the new capital was named Jackson specifically.">
+                <div class="widget-row-prompt">2. Why was Mississippi's new capital named Jackson?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Andrew Jackson personally founded the city</button>
+                    <button data-choice="1">It was named after a local judge, unrelated to the president</button>
+                    <button data-choice="2">Andrew Jackson was popular in Mississippi as the negotiator of the Treaty of Doak's Stand</button>
+                    <button data-choice="3">Jackson had served as Mississippi's first governor</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 13.2: Political Parties and Power in Early Mississippi</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Continue on to see how competing political factions emerged in Mississippi during the 1820s, and how newspapers became one of their main battlegrounds.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source 13.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read about a Natchez newspaper from this period and complete the paired Primary Source Exercise in Canvas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; LOOKING AHEAD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">A stable government structure is one thing. Genuine political competition within it is another. The next lesson turns to the rival factions and newspapers that emerged once Mississippians began disagreeing seriously with each other about who should hold power.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; MISSISSIPPI HISTORY &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 13.1 &middot; Mississippi's First Government: Governors, Legislature, and Early Politics</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
